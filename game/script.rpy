@@ -23,7 +23,7 @@ label start:
     show right placeholder_xatu at right
     es "Oh... S-Senpai..."
 
-    while day.dayNum < 30:
+    while day.dayNum <= 30:
         
         #Say what day it is.
         "[day.dayString]"
