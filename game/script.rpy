@@ -1,4 +1,4 @@
-﻿# You can place the script of your game in this file.
+# You can place the script of your game in this file.
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
@@ -13,10 +13,55 @@ define kt = Character('Katie', color="#00afc8")
 
 # The game starts here.
 label start:
+    
+    $ day = Day()
+
     show right placeholder_gator at right
     "<<Man, this guy looks so intimidating... oh no, is he looking at me?!>>"
     show right placeholder_katie at right
     kt "Kyaaaaah!!! I'm so sorry... I DRAGONBREATH when I get nervous..."
     show right placeholder_xatu at right
     es "Oh... S-Senpai..."
+
+    while day.dayNum < 30:
+        
+        #Say what day it is.
+        "[day.dayString]"
+        
+        #Call anything that happens prior to the day starting. ie. Day planners
+        
+        
+        #Call the current day.
+        call expression ("day" + `day.dayNum`)
+        
+        # Call anything that happens after the day. ie. Day summaries
+
+        if day.dayNum == 5:
+            "Another week as come and gone."
+        
+        # Increment to the next day.
+        $ day.nextDay()
+        
+    
+    "The game has ended. Time has run out."
+    
     return
+    
+label day1:
+    
+    "This is day one."
+    "Day number is [day.dayNum]."
+    "Day of the week string is [day.weekdayString]."
+    "Day of the week number is [day.weekdayNum]."
+    
+    return
+    
+label day2:
+    
+    "This is day two."
+    "Day number is [day.dayNum]."
+    "Day of the week string is [day.weekdayString]."
+    "Day of the week number is [day.weekdayNum]."
+    
+    return
+    
