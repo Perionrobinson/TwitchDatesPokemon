@@ -13,6 +13,7 @@ define kt = Character('Katie', color="#00afc8")
 
 # The game starts here.
 label start:
+    stop music
     show right placeholder_gator at right
     "<<Man, this guy looks so intimidating... oh no, is he looking at me?!>>"
     show right placeholder_katie at right
