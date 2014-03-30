@@ -31,9 +31,6 @@ label start:
         #Call anything that happens prior to the day starting. ie. Day planners
         
         
-        #Call the current day.
-        call expression ("day" + `day.dayNum`)
-        
         # Call anything that happens after the day. ie. Day summaries
 
         if day.weekdayNum == 5:
@@ -46,22 +43,3 @@ label start:
     "The game has ended. Time has run out."
     
     return
-    
-label day1:
-    
-    "This is day one."
-    "Day number is [day.dayNum]."
-    "Day of the week string is [day.weekdayString]."
-    "Day of the week number is [day.weekdayNum]."
-    
-    return
-    
-label day2:
-    
-    "This is day two."
-    "Day number is [day.dayNum]."
-    "Day of the week string is [day.weekdayString]."
-    "Day of the week number is [day.weekdayNum]."
-    
-    return
-    
