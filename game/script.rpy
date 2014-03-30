@@ -36,7 +36,7 @@ label start:
         
         # Call anything that happens after the day. ie. Day summaries
 
-        if day.dayNum == 5:
+        if day.weekdayNum == 5:
             "Another week as come and gone."
         
         # Increment to the next day.
