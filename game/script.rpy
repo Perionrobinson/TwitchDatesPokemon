@@ -2,9 +2,11 @@
 
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
+image left placeholder_rj = "assets/portraits/placeholder_generic.png"
 image right placeholder_gator = "assets/portraits/placeholder_generic.png"
 image right placeholder_xatu = "assets/portraits/placeholder_generic.png"
 image right placeholder_katie = "assets/portraits/placeholder_generic.png"
+image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
 # Declare characters used by this game.
 define es = Character('Burrito', color="#c8ffc8")
 define bj = Character('Bird Jesus', color="#a8afc8")
@@ -16,18 +18,21 @@ label start:
     
     $ day = Day()
 
-    show right placeholder_gator at right
-    "<<Man, this guy looks so intimidating... oh no, is he looking at me?!>>"
-    show right placeholder_katie at right
-    kt "Kyaaaaah!!! I'm so sorry... I DRAGONBREATH when I get nervous..."
-    show right placeholder_xatu at right
-    es "Oh... S-Senpai..."
-
     while day.dayNum <= 30:
         
         #Say what day it is.
-        "[day.dayString]"
-        
+        show left placeholder_rj
+        "It was [day.dayString]"
+
+        "We had classes in the morning."
+
+        scene placeholder_lunch
+        "Lunch went by like it always does..."
+        scene
+  
+
+        show left placeholder_rj
+        "Then we had afternoon classes, and then I went home and went to bed."      
         #Call anything that happens prior to the day starting. ie. Day planners
         
         
