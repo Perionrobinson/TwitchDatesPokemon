@@ -28,8 +28,9 @@ define ss = Character('Solid Snake', color="777777")
 define fl = Character('Flareon', color="AA0000")
 
 # The game starts here.
+
 label start:
-    
+    stop music
     $ day = Day()
 
     while day.dayNum <= 30:
