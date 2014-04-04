@@ -1,6 +1,7 @@
 # You can place the script of your game in this file.
 
 # Declare images below this line, using the image statement.
+image splash_image = "assets/backgrounds/start.png"
 # eg. image eileen happy = "eileen_happy.png"
 image rj = "assets/portraits/rj.png"
 image right placeholder_gator = "assets/portraits/placeholder_generic.png"
@@ -27,8 +28,12 @@ define lg = Character('Gator', color="777777")
 define ss = Character('Solid Snake', color="777777")
 define fl = Character('Flareon', color="AA0000")
 
-# The game starts here.
+label splashscreen:
+    show splash_image
+    $ renpy.pause()
+    return
 
+# The game starts here.
 label start:
     stop music
     $ day = Day()
