@@ -204,7 +204,7 @@ label introduction:
     #show rj_close_eyes
     
     "Really... *yawn* REALLY comfy…"
-
+    return
 
 label lunch_choice_1:
   "Then we all headed to lunch..."
