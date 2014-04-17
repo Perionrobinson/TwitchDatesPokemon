@@ -20,7 +20,7 @@ label introduction:
     'Announcer' "Next stop: Twitch Academy. Next stop: Twitch Academy."
     
     show rj at left with vpunch
-    rj "….Zzzzzhngh what was that?"
+    rj "….Zzzzzhngh?"
     #show train_back
     
     #make rj opaque
