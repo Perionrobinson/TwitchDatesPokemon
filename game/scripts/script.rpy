@@ -35,7 +35,9 @@ define ab = Character('Abby', color="AA0000")
 define lg = Character('Gator', color="777777")
 define ss = Character('Solid Snake', color="777777")
 define fl = Character('Flareon', color="AA0000")
-
+define uk = Character('???',color="#FFFFFF")
+define xa = Character('Will',color="#84EFE5")
+define mw = Character('Ms. Whitney', color= "#FFAA99")
 #relationship_tracking
 label splashscreen:
     show splash_image
@@ -62,10 +64,13 @@ label start:
         
         #Say what day it is.
         show rj
+        if day.dayNum == 1:
+           call dorm_scene_1
         "It was [day.dayString]"
 
         "We had classes in the morning."
-
+        if day.dayNum == 1:
+           call class_scene_1
         scene placeholder_lunch
         if day.dayNum == 1:
           call day_1_lunch
