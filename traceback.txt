@@ -1,71 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 47, in script call
-  File "game/script.rpy", line 167, in script
-Exception: u'/p' closes a text tag that isn't open.
+  File "game/scripts/script.rpy", line 58, in script call
+  File "game/scripts/day_1_lunch.rpy", line 48, in script
+  File "game/scripts/day_1_lunch.rpy", line 48, in python
+NameError: name 'true' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "C:\renpy\renpy\execution.py", line 294, in run
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/execution.py", line 294, in run
     node.execute()
-  File "C:\renpy\renpy\ast.py", line 464, in execute
-    renpy.exports.say(who, what, interact=self.interact)
-  File "C:\renpy\renpy\exports.py", line 925, in say
-    who(what, interact=interact)
-  File "C:\renpy\renpy\character.py", line 812, in __call__
-    self.do_display(who, what, cb_args=self.cb_args, **display_args)
-  File "C:\renpy\renpy\character.py", line 678, in do_display
-    **display_args)
-  File "C:\renpy\renpy\character.py", line 481, in display_say
-    rv = renpy.ui.interact(mouse='say', type=type, roll_forward=roll_forward)
-  File "C:\renpy\renpy\ui.py", line 237, in interact
-    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
-  File "C:\renpy\renpy\display\core.py", line 1993, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "C:\renpy\renpy\display\core.py", line 2311, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "C:\renpy\renpy\display\core.py", line 1530, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 365, in renpy.display.render.render_screen (gen\renpy.display.render.c:5300)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\screen.py", line 295, in render
-    child = renpy.display.render.render(self.child, w, h, st, at)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 903, in render
-    st, at)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\display\layout.py", line 698, in render
-    surf = render(d, width - x, rh, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen\renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen\renpy.display.render.c:2491)
-  File "C:\renpy\renpy\text\text.py", line 1450, in render
-    layout = Layout(self, width, height, renders)
-  File "C:\renpy\renpy\text\text.py", line 491, in __init__
-    self.paragraphs = self.segment(text.tokens, style, renders)
-  File "C:\renpy\renpy\text\text.py", line 774, in segment
-    raise Exception("%r closes a text tag that isn't open." % text)
-Exception: u'/p' closes a text tag that isn't open.
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/ast.py", line 732, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/python.py", line 1358, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/scripts/day_1_lunch.rpy", line 48, in <module>
+    "Lunch was actually pretty good. I think I picked the right table. Those guys are pretty funny, and even though I didn't say much and they didn't say much to me, I got the feeling they'd be glad to have me sit with them again tomorrow."
+NameError: name 'true' is not defined
 
-Windows-7-6.1.7601-SP1
+Linux-3.8.0-35-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.17.3.327
 TwitchDatesPokemon 0.0
