@@ -36,6 +36,7 @@ define lg = Character('Gator', color="777777")
 define ss = Character('Solid Snake', color="777777")
 define fl = Character('Flareon', color="AA0000")
 
+#relationship_tracking
 label splashscreen:
     show splash_image
     $ renpy.pause()
@@ -43,6 +44,15 @@ label splashscreen:
 
 # The game starts here.
 label start:
+    $ relationships = {'atv': 0,
+                   'katie': 0,
+                   'gator': 0,
+                   'snake': 0,
+                   'brian': 0,
+                   'bj': 0,
+                   'flareon': 0
+                  }
+
     stop music
     $ day = Day()
     

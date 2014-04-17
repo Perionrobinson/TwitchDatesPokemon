@@ -26,6 +26,9 @@ label day_1_lunch:
       bj "When AJ’s right, he’s really right. That’s a good philosophy to have...so sure, Burrito, you can come sit with us."
 
       "The rest of lunch is pretty good. For the popular crowd, they’re all really nice, even if AJ is always serious and B.J. talks more than anyone else put together...Brian still never really said anything at all, though."
+      $ relationships['bj'] += 3
+      $ relationships['brian'] += 1
+
     "Table 2 - Gator, Abby, Fonz, Solid Snake":
       fz "And thats when she says-"
       ss "That she admires my Rock Hard Determination!"
@@ -44,6 +47,9 @@ label day_1_lunch:
       ab "Right, right, so I'm in science class, and one of those creepy little oddish has somehow managed to get himself trapped in the vent chamber..."
       hide abby
       "Lunch was actually pretty good. I think I picked the right table. Those guys are pretty funny, and even though I didn't say much and they didn't say much to me, I got the feeling they'd be glad to have me sit with them again tomorrow."
+      $ relationships['gator'] += 3
+      $ relationships['snake'] += 3
+
     "Table 3 - ATV, Katie, Digrat":
       show atv at right
       atv "I got you THAT time!"
@@ -76,6 +82,8 @@ label day_1_lunch:
       rj "Um…"
       hide katie
       "The rest of lunch with them was really fun, even if it was pretty weird. They were really friendly, even if Digrat stole my utensils to make battlements for his castle, Katie kept asking me weird questions about my past and ATV never stopped being a knight, looking for more dragons to slay. "
+      $ relationships['atv'] += 3
+      $ relationships['katie'] += 3
 
     "Table 4 - Flareon":
       fl "…."
@@ -93,6 +101,8 @@ label day_1_lunch:
       br "That’s me...just Brian. Do you mind if I sit with you?"
       rj "Not at all. I promise I won’t even get up and move tables!"
       "Brian and I had lunch together, just the two of us at that table. He talks a lot more when he’s not around his brother. It was really nice to have somebody to talk to!"
+      $ relationships['flareon'] += 1
+      $ relationships['brian'] += 3
 
     "Sit Alone":
       "On second thought, it’s probably a better idea just to sit by myself on the first day. I don’t know enough about anyone yet…"
@@ -104,6 +114,7 @@ label day_1_lunch:
         "Go ahead":
           rj "Not at all. I promise I won’t even get up and move tables!"
           "Brian and I had lunch together, just the two of us at that table. He talks a lot more when he’s not around his brother. It was really nice to have somebody to talk to!"
+          $ relationships['brian'] += 3
         "I'd prefer to be alone":
           rj "Um, no thanks. I need some quiet to study."
           br "Okay. Sorry."
