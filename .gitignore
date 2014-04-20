@@ -1,4 +1,5 @@
 *.swp
+*.rpyc
 game/saves/*
 log.txt
 errors.txt
