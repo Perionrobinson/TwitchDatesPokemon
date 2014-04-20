@@ -1,66 +1,22 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/scripts/script.rpy", line 81, in script call
-  File "game/scripts/introduction.rpy", line 5, in script
-IOError: Couldn't find file 'assets/portraits/burrito.png'.
+  File "game/scripts/script.rpy", line 93, in script call
+  File "game/scripts/script.rpy", line 93, in script call
+ScriptError: could not find label 'dorm_scene_1'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/execution.py", line 294, in run
     node.execute()
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/ast.py", line 1163, in execute
-    renpy.exports.with_statement(trans, paired)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/exports.py", line 1147, in with_statement
-    return renpy.game.interface.do_with(trans, paired, clear=clear)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/core.py", line 1662, in do_with
-    clear=clear)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/core.py", line 1993, in interact
-    repeat, rv = self.interact_core(preloads=preloads, **kwargs)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/core.py", line 2311, in interact_core
-    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/core.py", line 1530, in draw_screen
-    renpy.config.screen_height,
-  File "render.pyx", line 365, in renpy.display.render.render_screen (gen/renpy.display.render.c:5300)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/transition.py", line 176, in render
-    renpy.display.render.render(self.transitions[-1], width, height, 0, 0)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/transition.py", line 362, in render
-    top = render(self.new_widget, width, height, st, at)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/layout.py", line 536, in render
-    surf = render(child, width, height, cst, cat)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "accelerator.pyx", line 109, in renpy.display.accelerator.transform_render (gen/renpy.display.accelerator.c:1654)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/image.py", line 164, in render
-    return wrap_render(self.target, width, height, st, at)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/image.py", line 54, in wrap_render
-    rend = render(child, w, h, st, at)
-  File "render.pyx", line 95, in renpy.display.render.render (gen/renpy.display.render.c:2764)
-  File "render.pyx", line 166, in renpy.display.render.render (gen/renpy.display.render.c:2491)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/im.py", line 463, in render
-    im = cache.get(self)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/im.py", line 196, in get
-    surf = image.load()
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/display/im.py", line 507, in load
-    surf = renpy.display.pgrender.load_image(renpy.loader.load(self.filename), self.filename)
-  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/loader.py", line 428, in load
-    raise IOError("Couldn't find file '%s'." % name)
-IOError: Couldn't find file 'assets/portraits/burrito.png'.
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/ast.py", line 1210, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/execution.py", line 371, in call
+    return renpy.game.script.lookup(label)
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/script.py", line 547, in lookup
+    raise ScriptError("could not find label '%s'." % str(label))
+ScriptError: could not find label 'dorm_scene_1'.
 
 Linux-3.8.0-35-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.17.3.327

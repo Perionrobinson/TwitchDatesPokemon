@@ -1,5 +1,8 @@
 *.swp
 *.rpyc
+*.rpyb
 game/saves/*
 log.txt
 errors.txt
+traceback.txt
+tmp/*
