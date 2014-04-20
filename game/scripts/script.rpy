@@ -1,9 +1,15 @@
 # You can place the script of your game in this file.
 
-# Declare images below this line, using the image statement.
+# Backgrounds
 image splash_image = "assets/backgrounds/start.png"
-# eg. image eileen happy = "eileen_happy.png"
+image bg black = Solid((0, 0, 0, 255))
+image bg standard = Solid("#808080")
+image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
+image outside = "assets/backgrounds/outside.jpg"
+
+# Characters
 image burrito = "assets/portraits/burrito.png"
+image burrito_voiceover = im.Alpha("assets/portraits/burrito.png", 0.5)
 image burrito normal = "assets/portraits/burrito.png"
 image burrito confused = "assets/portraits/burrito.png"
 image burrito smile = "assets/portraits/burrito.png"
@@ -33,10 +39,9 @@ image digrat excited = "assets/portraits/digrat_placeholder.jpg"
 image digrat sad = "assets/portraits/digrat_placeholder.jpg"
 image digrat nervous = "assets/portraits/digrat_placeholder.jpg"
 image snake = "assets/portraits/snake.png"
-image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
+
+#special text and images
 image letter_map = "assets/backgrounds/letter_map.png"
-image outside = "assets/backgrounds/outside.jpg"
-#special text
 image train_text = Text("...oh yeah, I’m on the train. Guess I fell asleep on the way here.\nFunny how much moving can tire you out.\nThe announcer's voice... ah. My next stop: Twitch Academy.\nI keep repeating those two words in my head, but it still doesn't feel real. Ever since I was small I'd heard about how incredible this chsool was. High standards, prestigious teachers, and plenty of students who went on to illustrious careers!\nEverything a star school should have.\nI was a lucky enough Espeon that now I was going to be one of those students!\n'Espeon'...\nEven that is new to me. I wanted to be an Espeon for the longest time, but it was taking me forever to evolve. My old teachers asked, why couldn't I just be like all the other Eevees and use a stone to evolve? But... I just couldn't. Instead, I committed myself to what I wanted, and now here I am - an Espeon. The Sun Pokémon. Symbol of new days and new beginnings!\nNow I’ll have to prove myself at Twitch Academy. I wonder what my classmates will be like... I hope I can make some friends!")   
 #image train_back = ""
 #image burrito_char_pan = ""
