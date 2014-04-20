@@ -75,11 +75,13 @@ label start:
   
 
         show rj
-        "Then we had afternoon classes, and then I went home and went to bed."      
-        #Call anything that happens prior to the day starting. ie. Day planners
-        
-        
-        # Call anything that happens after the day. ie. Day summaries
+        "Then we had afternoon classes, and I had to decide what I was going to do after school."
+        if day.dayNum == 1:
+          call day_1_after_school_choice
+        elif day.dayNum == 2:
+          call day_2_after_school_choice
+        else:
+          "I decided to just go home today, spend some time relaxing, then go to bed."      
 
         if day.weekdayNum == 5:
             "Another week has come and gone."

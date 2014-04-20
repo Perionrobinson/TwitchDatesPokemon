@@ -1,16 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
+<<<<<<< HEAD
   File "game/scripts/script.rpy", line 58, in script call
   File "game/scripts/day_1_lunch.rpy", line 48, in script
   File "game/scripts/day_1_lunch.rpy", line 48, in python
 NameError: name 'true' is not defined
+=======
+  File "game/scripts/script.rpy", line 96, in script call
+  File "game/scripts/day_2_lunch.rpy", line 24, in script
+  File "game/scripts/day_2_lunch.rpy", line 24, in python
+NameError: name 'sat_with_day_1' is not defined
+>>>>>>> a35a876... Added basic after-school controller details.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
   File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/execution.py", line 294, in run
     node.execute()
+<<<<<<< HEAD
   File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/ast.py", line 732, in execute
     renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
   File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/python.py", line 1358, in py_exec_bytecode
@@ -18,6 +26,15 @@ Full traceback:
   File "game/scripts/day_1_lunch.rpy", line 48, in <module>
     "Lunch was actually pretty good. I think I picked the right table. Those guys are pretty funny, and even though I didn't say much and they didn't say much to me, I got the feeling they'd be glad to have me sit with them again tomorrow."
 NameError: name 'true' is not defined
+=======
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/ast.py", line 1547, in execute
+    if renpy.python.py_eval(condition):
+  File "/home/glyphgryph/renpy-6.17.3-sdk/renpy/python.py", line 1392, in py_eval
+    return eval(py_compile(source, 'eval'), globals, locals)
+  File "game/scripts/day_2_lunch.rpy", line 24, in <module>
+    if sat_with_day_1 == "atv":
+NameError: name 'sat_with_day_1' is not defined
+>>>>>>> a35a876... Added basic after-school controller details.
 
 Linux-3.8.0-35-generic-x86_64-with-debian-wheezy-sid
 Ren'Py 6.17.3.327
