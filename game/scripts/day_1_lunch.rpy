@@ -112,10 +112,12 @@ label day_1_lunch:
       
       menu:
         "Go ahead":
+          $ sat_with_day_1 = "brian"
           rj "Not at all. I promise I won’t even get up and move tables!"
           "Brian and I had lunch together, just the two of us at that table. He talks a lot more when he’s not around his brother. It was really nice to have somebody to talk to!"
           $ relationships['brian'] += 3
         "I'd prefer to be alone":
+          $ sat_with_day_1 = "alone"
           rj "Um, no thanks. I need some quiet to study."
           br "Okay. Sorry."
           "I couldn’t tell him how nervous I was to try and make friends with the little brother of the most popular person in school, not on my first day."
