@@ -21,7 +21,7 @@ label day_1_lunch:
       call day_1_lunch_table_4
       $ do_nothing_yet = True
     "Sit alone":
-      # call day_1_lunch_table_5
+      call day_1_lunch_table_5
       $ do_nothing_yet = True
   return
 
@@ -365,4 +365,141 @@ label day_1_lunch_table_4:
             "..."
             "I just realized, I never did find out her name."
             "But... I think it's best if I just leave it like that for now..."
+    return
+    
+label day_1_lunch_table_5:
+    "There's a lone table sitting at the corner. I don't know if I should sit with others yet. I really don't know any of them, so I feel like I'd be a bit of a bother..."
+    show burrito at left
+    burrito "But eventually, it would be nice to join in and make some friends. So, until then..."
+    show burrito sad at left
+    burrito "I'll just sit by myself."
+    hide burrito
+    #play sound "sit_down.mp3"
+    #play sound "paper_bag_crinkle.mp3"
+    "~~ Sound of Burrito sitting down ~~"
+    "~~ sound of paper bag crinkling ~~"
+    "Mom sent me the family’s celebratory bean and rice burritos for today’s lunch."
+    "I could already hear my stomach growling in excitement."
+    "Ooh salsa... yeah that's it..."
+    "These just look even more delicious with the salsa on it."
+    burrito "Oh my lovely burritos, keep me company for today..."
+    "..."
+    "Even if I can’t sit with other students right now, I really shouldn't be upset."
+    "After all, how can I be anything but happy with delicious burritos for lunch?"
+    "???" "E-excuse me?"
+    show burrito confused at left
+    burrito "Hmm?"
+    show brian at right
+    brian "Um, hello there. My name is Brian. Would you mind if I....sit with you?"
+    
+    menu:
+        "Let him sit":
+            $ relationships["brian"]+=3
+            show burrito happy at left
+            burrito "Of course! I mean, if you really want to."
+            show brian happy at right
+            brian "Sure!"
+            
+            # Brian character panel appears, when it exists
+            "CHARACTER PANEL PLACEHOLDER"
+            $ introduced["brian"] = True
+            
+            "Brian sits across from me and I notice his lunch; it’s a salad with lots of sunflower seeds, and some sort of vegetable sandwich."
+            show brian at right
+            brian "So, um... I heard that you've seen my brother already..."
+            show burrito surprised at left
+            burrito "Your brother? Wait, do you mean..."
+            hide burrito
+            hide brian
+            show bj at center
+            $ renpy.pause(1.0)
+            hide bj with fade
+            show burrito surprised at left
+            show brian at right
+            brian "Yes. I'm Abba’s little brother."
+            show burrito smile at left
+            burrito "Oh, I've met Abba! He seems like a really nice guy!"
+            show brian awkward at right
+            brian "Y-yeah, he is."
+            show burrito confused at left
+            burrito "Huh?"
+            show brian at right
+            brian "Oh, it's nothing."
+            show brian happy at right
+            brian "Say, could I try some of that salsa?"
+            show burrito at left
+            burrito "Sure. But I have to warn you, it can be a little...spicy."
+            "I watched as Brian scooped some salsa into a spoon and swallow it. A few seconds passed. I saw Brian start to sweat."
+            show brian nervous at right
+            brian "W-well....that salsa really is....something!"
+            show brian sweating at right
+            brian "It's so...so...."
+            show burrito nervous at left
+            burrito "..."
+            hide brian
+            "He immediately went for his bottle of water and drank it all up!"
+            "Maybe I should have been a bit more stern with the warning..."
+            show brian panting at right
+            brian "That...is....spicy...."
+            show burrito embarrassed at left
+            burrito "Well, that’s because it was made with lots of Tamato and Kelpsy berries grown to be super spicy."
+            show burrito at left
+            burrito "Also, water isn’t the best choice when it comes to combating spiciness."
+            brian "Then, what’s the best way to *cough* fight it?"
+            burrito "Milk and other dairy products. In fact, I happen to have a bottle of Moomoo Milk to sha--"
+            hide brian
+            show brian at left with moveinright
+            #play sound "swipe.mp3"
+            "~wind sound/swiping sound~"
+            show burrito surprised at left
+            "?!"
+            hide brian with moveoutright
+            brian "*gulp gulp*"
+            "He just drank that one all up too!"
+            show burrito laughing at left
+            "I'm trying hard not to laugh, but... hahaha..."
+            show brian nervous at right with moveinright
+            brian "Haah..."
+            show brian at right
+            brian "Aah."
+            show brian smiling at right
+            brian "Wow, that really did the trick!"
+            show burrito smile at left
+            burrito "I know, right?"
+            show brian at right
+            brian "And you know what? This salsa's actually pretty good!"
+            show brian happy at right
+            brian "Think you can give me a recipe for this?"
+            show burrito surprised at left
+            burrito "Huh? But when you ate it…"
+            show brian nervous at right
+            brian "I-I mean, maybe a milder version of it….if it’s not too much trouble."
+            show burrito happy at left
+            burrito "Oh! Sure thing!"
+            "I may not be the salsa expert in the family, but I've helped with the cooking long enough for me to know how it's done. Maybe I can finally try my hand at making my own now!"
+            "~munching sounds~"
+            show brian happy at right
+            "The two of us continue to eat and chat about school. Turns out, we were actually in the same Biology class earlier, he just didn't get the chance to say much. Wonder why I didn't notice him though?"
+            "Still, it feels really nice to have a friend, especially on the first day."
+            "~bell rings~"
+            show brian at right
+            brian "Oh, looks like lunch is over. Thanks for letting me sit here, Burrito!"
+            show burrito smile at left
+            burrito "No problem! It was great talking with you. I hope we can have another lunch like this."
+            show brian smiling at right
+            brian "Me too! Bye!"
+            burrito "Bye!"
+            hide burrito
+            hide brian
+            "And with that, we went to our next class."
+            "Though, what was with his reaction earlier when I mentioned Abba?"
+            "I hope it's nothing too troublesome. Maybe I should ask him about it next time..."
+            "Anyway, I need to get back to class."     
+        "Decline his offer":
+            burrito "I... I’m sorry, but I’d like to be alone today."
+            show brian sad at right
+            brian "Oh... I understand. Well, have a good lunch."
+            hide brian
+            "I watch Brian leave with a look of guilt.I really didn’t mean to be rude to him. I hope that the next time we meet, we can have lunch together."
+            
     return
