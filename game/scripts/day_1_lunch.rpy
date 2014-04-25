@@ -18,7 +18,7 @@ label day_1_lunch:
       # call day_1_lunch_table_3
       $ do_nothing_yet = True
     "Table 4; ??? (Flareon)":
-      # call day_1_lunch_table_4
+      call day_1_lunch_table_4
       $ do_nothing_yet = True
     "Sit alone":
       # call day_1_lunch_table_5
@@ -168,3 +168,201 @@ label day_1_lunch_table_1:
   hide Burrito
 
   return
+
+label day_1_lunch_table_4:
+    $ relationships["flareon"]+=3
+    "Is it really a good idea to sit there? I might be bothering her. Maybe she wants to eat alone."
+    "Then again, I figure this is as good a chance as any to meet someone. Can’t just expect new friends to run into me on the first day."
+    "No time for doubts now."
+    
+    #play sound "footsteps.mp3"
+    
+    "Great! Something to break the ice, at least."
+    "It doesn’t look like she has anything for lunch; just a book that she’s reading. I squint at the cover, trying to get a better look."
+    "Oh! It's that \"Sparkle Zubat\" series. I've only heard others talking about the book, but it doesn't really seem like my thing."
+    "Harry Oshawotter is my book of choice, though. Maybe she also reads it? Only one way to find out."
+    show burrito nervous at left
+    burrito "Hi there, mind if I sit here?"
+    show flareon at right
+    flareon "..."
+    burrito "I'm... well, people have been calling me Burrito, ahaha..."
+    show burrito flustered at left
+    burrito "B-but don’t think you have to call me that, or that that’s my real name. It’s just some silly nickname."
+    flareon "..."
+    "She just keeps reading her book..."
+    show burrito nervous at left
+    burrito "But, um, you can call me Burrito, I guess, if you prefer... That's okay too!"
+    flareon "..."
+    burrito "Uh... Stay silent if it’s okay for me to sit here!"
+    flareon "..."
+    "..."
+    "Guess I should just sit down here and get started on my lunch."
+    show burrito at left
+    burrito "So, um... what's your name?"
+    flareon "..."
+    show burrito nervous at left
+    "She's still reading her book, like she's ignoring me..."
+    "She hasn't even looked at me once."
+    "All she's done is turn pages. Maybe I made a mistake sitting here..."
+    show burrito at left
+    burrito "Well, uh... What are you eating? Not your book, are you?"
+    show burrito nervous at left
+    burrito "Um... Though if you were, it wouldn’t be so bad. It *is* rich in fiber!"
+    flareon "..."
+    show burrito embarrassed at left
+    "Swing and a miss there."
+    "Maybe I shouldn't have brought up the book..."
+    "Sigh."
+    "I should get started on my lunch before class starts."
+    show burrito at left
+    burrito "The cafeteria is pretty packed, so I hope you don’t mind if I just stay here and eat."
+    flareon "..."
+    "Still nothing."
+    "Ah well. At least there’s no way for me to be awkward with my food."
+    flareon "...Is that salsa?"
+    show burrito surprised at left
+    "!"
+    "She... she actually talked!"
+    "Is she... looking at my salsa...?"
+    burrito "Huh?"
+    show burrito friendly at left
+    burrito "A-ah, yeah... yes it is."
+    flareon "..."
+    "Of all things to get her attention, it’s my salsa? Not my witty banter?"
+    "Whatever works, I guess."
+    show burrito nervous at left
+    burrito "Um... you can have some if you want...?"
+    "I watch as she carefully samples a bit. Wait-"
+    show burrito panic at left
+    "W-wait, that's super spicy! I should have warned her first! This could be bad!"
+    "My cousins grow their own Tamato and Kelpsy berries and have specifically bred them to be really, really hot. Only the bravest of tongues can handle its fiery taste!"
+    flareon "..."
+    "But the Flareon doesn’t react. I simply look on, agape with fear. Any second now she’ll be howling in pain."
+    show flareon small smile at right
+    flareon "...It's good."
+    
+    # Flareon character panel appears, when it exists
+    "CHARACTER PANEL PLACEHOLDER"
+    $ introduced["flareon"] = True
+    
+    show burrito surprised at left
+    burrito "...Huh?"
+    "She drank it all..."
+    show burrito embarrassed at left
+    "She even licked her lips once she was done... eh?!"
+    show burrito nervous at left
+    "I... I don't get it, shouldn't she be screaming right now?! Tearing up at least? It took me years to get used to the flavor!"
+    show flareon at right
+    flareon "... Did you make this?"
+    
+    menu:
+        "No, not really.":
+            $ relationships["flareon"]+=1
+            show burrito nervous at left
+            burrito "U-um, yes... and no. My mother and I made it. She has this whole process to it where she blends a bunch of different berries together at just the right temperature."
+            show burrito happy at left
+            burrito "See, the temperature is SUPER important! Otherwise it won’t bring out the flavor, right?"
+            show burrito sad at left
+            burrito "Or... at least, that’s what my mom tells me... Sorry, this must all be very boring for you."
+            show flareon small smile at right
+            flareon "..."
+            "I’ll take that as a maybe."
+            show burrito embarrassed at left
+            burrito "I-... In truth I have no idea what happens. My mom always did all of the work, I just helped her cut the berries."
+            "The spice level usually varies from person to person. My dad likes it more in the “medium” range, but my mom and I really like it spicy."
+            flareon "..."
+            show burrito at left
+            burrito "Uh... I take it you like spicy as well?"
+            flareon "..."
+            "No words, but she nodded in response."
+            "We're getting somewhere!"
+            burrito "Shoulda pegged you as one who enjoys spicy food. You’re a Flareon, after all!"
+            show flareon at right
+            flareon "..."
+            "Another nod."
+            "It’s actually kinda cute, the way she nods her head like that. I just wish she was willing to talk more."
+            show burrito happy at left
+            burrito "You know, my mom sent me a giant box of salsa. You’re welcome to have some if you’d like."
+            flareon "Bring it to dinner."
+            show burrito nervous at left
+            burrito "W-what?! U...um, alright..."
+            show burrito at left
+            "After that, she returned to reading her book."
+            "I should finish my lunch now."
+            "~munching sounds~"
+            burrito "*munch munch*"
+            flareon "..."
+            "I could see her giving glances at me from the corner of her eye. Not sure what that means, but I think she's actually trying to communicate!"
+            show burrito nervous at left
+            show flareon small smile at right
+            flareon "..."
+            "She nodded again."
+            "And nothing else."
+            show burrito at left
+            "What a strange girl."
+            "~bell rings~"
+            burrito "Oh, lunch is over. I have to get back to class now."
+            show burrito happy at left
+            burrito "Thanks for letting me sit here. Bye!"
+            hide burrito with moveoutright
+            #Need flareon to move slightly before leaving
+            #show flareon small smile
+            flareon "..."
+            hide flareon small smile with moveoutright
+            "Oh... I just realized... I never found out her name..."
+            "I'm looking forward to seeing her again, though. Such a mysterious girl..."
+        "Of course I did!":
+            $ relationships["flareon"]-=1
+            show burrito happy at left
+            burrito "I made it all by myself, didn’t you know?"
+            flareon "..."
+            burrito "You see, I’m just a magnificent chef and so I made all these different types of food. See, with this particular blend of salsa, the berries need to be mixed together at just the right temperature."
+            show burrito nervous at left
+            burrito "That’s because... uh... Well, I’m, uh, sure there’s a reason for it."
+            show burrito happy at left
+            burrito "But it makes for some pretty darn good salsa!"
+            flareon "..."
+            "Somehow, it’s like the air got a bit colder..."
+            show burrito at left
+            burrito "Well that’s not important. What’s important is that I made this!"
+            show burrito smirk at left
+            burrito "And there’s more where that came from, uh, \"hot-stuff\"!"
+            burrito "..."
+            show burrito panic at left
+            "I did not just say that. I did NOT. JUST. SAY THAT."
+            show burrito nervous at left
+            burrito "Y’see, cause you’re like, a Flareon? And you like spicy stuff?"
+            "...no! Stop. Just stop, right now...!"
+            flareon "..."
+            show burrito embarrassed at left
+            burrito "*cough* So, uh, eat here often?"
+            flareon "It’s the cafeteria, so yes."
+            show burrito nervous at left
+            burrito "O-of course, of course. W-well, maybe I’ll bring some more salsa to dinner later, how about it?"
+            flareon "..."
+            flareon "Fine."
+            show burrito at left
+            "Forget about it getting colder, the air is now absolutely frigid."
+            "This has been an extremely awkward conversation. I should just go ahead and finish my lunch..."
+            "~munching sounds~"
+            show burrito sad at left
+            burrito "..."
+            flareon "..."
+            "It's only been a few minutes, but it feels like I've been eating forever."
+            "I can't help but keep looking at her though... I really think I need to apologize somehow..."
+            show burrito nervous at left
+            burrito "U-um-"
+            "~bell rings~"
+            show burrito sad at left
+            burrito "Oh, the bell..."
+            "Well, I really don't think I should say anything at this point."
+            "I should just fix up and get outta here."
+            hide burrito with moveoutright
+            #Need flareon to move slightly before leaving
+            #show flareon
+            flareon "..."
+            hide flareon with moveoutright
+            "..."
+            "I just realized, I never did find out her name."
+            "But... I think it's best if I just leave it like that for now..."
+    return
