@@ -23,7 +23,7 @@ label class_scene_1:
   uk "Now then..."
   show generic_character at right
   bj "Hello, sophomore. My name is Abba. I am the head of the student council, third year class rep, and your guide to your first class."
-  if menu_flag1:
+  if(late_on_first_day):
     bj "Incidentally, you are slightly tardy. A rather poor show, for your first day."
     burrito "Oh, I’m sorry..."
     $ relationships['bj'] -= 1
@@ -65,7 +65,7 @@ label class_scene_1:
   burrito "Shoot, I’m a little late. Still, I’m sure Ms. Whitney will forgive me since it’s my first day. Alright, here goes!"
   show burrito at left
   mw "Arc?"
-  aj "Present."
+  arc "Present."
   mw "Brian?"
   brian "Here."
   mw "Burrito?"
@@ -118,7 +118,7 @@ label class_scene_1:
   mw "Hello, dears, and welcome to the start of a fun new school year! But before we can get to the wonders of biology-"
   "everyone" "Groan…"
   mw "We need to take roll! Look alive, everybody. Arc?"
-  aj "Present."
+  arc "Present."
   mw "Brian?"
   brian "Here."
   mw "Burrito?"
@@ -146,19 +146,19 @@ label class_scene_1:
        zoom 1.0
        xalign 0.0 yalign 1.0
   burrito "But then again, Burrito is kind of cute... I just wish I knew what Mom was thinking when she put that as my official name."
-  aj "Are you talking to yourself?"
+  arc "Are you talking to yourself?"
   show generic_character at right
-  aj "About… burritos? Seems rather vain, given your name."
+  arc "About… burritos? Seems rather vain, given your name."
   burrito "Oh, um. Yeah. I like burritos. It’s kind of a family tradition that we make burritos with super-spicy salsa for our first meal each time we go to a new school."
-  aj "Quaint. My first day rituals involve proclaiming, 'I am an Archangel of JUSTICE! BOOORAAZZZ!'"
+  arc "Quaint. My first day rituals involve proclaiming, 'I am an Archangel of JUSTICE! BOOORAAZZZ!'"
   mw "A volunteer!"
-  aj "Beg pardon?"
+  arc "Beg pardon?"
   mw "I was just asking who wanted to hand out the syllabus. You clearly have too much energy, so you can do it, Sparky!"
-  aj "My name is Arc, not Sparky. And I refuse to serve. Do you know how many servants I have at home? I will not lower myself to the level of… of... manual labor."
+  arc "My name is Arc, not Sparky. And I refuse to serve. Do you know how many servants I have at home? I will not lower myself to the level of… of... manual labor."
   mw "Aw, that’s a shame. Your grades could really do with a bit of a boost in my class, you know. It’s not often I’m willing to hand out extra credit so easily. Plus, I’m telling you to."
   show generic_character:
       linear 1.0 xalign 1.6
-  aj "I'll file a lawsuit, just wait and see…"
+  arc "I'll file a lawsuit, just wait and see…"
   mw "That’s nice, Sparky."
   hide burrito
   burrito "Arc handed out the biology syllabi, muttering to himself all the while. We reviewed it line by line, as Ms. Whitney didn’t seem sure we knew how to read. Other than the frequent protests from students whenever Ms. Whitney gave someone a ridiculously cute nickname, it was peaceful and class proceeded smoothly."

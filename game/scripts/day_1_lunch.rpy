@@ -1,125 +1,170 @@
 label day_1_lunch:
-    
-  "Then we all headed to lunch..."
-  show burrito at left
-  burrito "Wow, thats noisy. And so many people!"
-  burrito "Where am I supposed to sit?"
-  gyra "Hey, kid! Stop gawking and move along, you're holding up the line!"
-  burrito "Sorry!"
-  burrito "Aw shoot, where am I going to go!?"
+  "I probably should have gotten here earlier, this cafeteria is pretty packed! At least I don’t have to wait in line, since I brought lunch today."
+  "It’s definitely better than anything that a school cafeteria could ever prepare, anyway. Super-ultra-deluxe Cheri burritos with Mom’s special homemade salsa!"
+  "Hmm."
+  "There’s seats by Abba, that class rep, who is sitting with Arc and Brian from class, as well as another Pokemon I don’t really know."
+  "ATV is sharing a table with Katie and a Raticate; he seemed a bit strange during class but I’m sure he and his friends are interesting! I wonder why they’re sitting together, though. Don’t they hate each other?"
+  "There’s a table of a bunch of big Pokemon including Fonz and Gator, as well as a Steelix and a female Charmeleon. I mean, I guess Gator and Fonz are funny... in a way."
+  "But who is that Flareon sitting alone? Most Eevee where I came from had plenty of friends, especially after they evolved."
+  "Hmm, which seat should I take..."
+
   menu:
-    "Table 1 - ABBA, AJ, Brian, Air":
-      show burrito at left
-      air "I’m just saying that you should get some fresh air sometimes!"
-      aj "And I’m just saying if you looked at a book instead of a basketball, you wouldn’t need my notes every day."
-      bj "Need to, no, but you’re easy to copy because you pretty much write them for us."
-      aj "Well, I don’t need them."
-      aj "Yeah, yeah, AJ the legendary, bound to be valedictorian while the rest of us actually enjoy life!"
-      burrito "Um...I’m sorry, is it okay if I sit here?"
-      aj "And you are?"
-      bj "The new transfer student. Burrito, right? Brian mentioned you."
-      brian "….."
-      bj "We like to meet new people, even if they’re teeny tiny little ones like you."
-      air "And you are tiny, just like little bro Brian, huh?"
-      brian "….."
-      aj "It’s never too early to start making it big, though."
-      bj "When AJ’s right, he’s really right. That’s a good philosophy to have...so sure, Burrito, you can come sit with us."
+    "Table 1; Abba, Arc, Brian, ??? (Lapras)":
+      call day_1_lunch_table_1
+    "Table 2; ATV, Katie, ???(Raticate)":
+      # call day_1_lunch_table_2
+      $ do_nothing_yet = True
+    "Table 3; Lazor, Fonz, ??? (Steelix), ??? (Charmeleon)":
+      # call day_1_lunch_table_3
+      $ do_nothing_yet = True
+    "Table 4; ??? (Flareon)":
+      # call day_1_lunch_table_4
+      $ do_nothing_yet = True
+    "Sit alone":
+      # call day_1_lunch_table_5
+      $ do_nothing_yet = True
+  return
 
-      "The rest of lunch is pretty good. For the popular crowd, they’re all really nice, even if AJ is always serious and B.J. talks more than anyone else put together...Brian still never really said anything at all, though."
-      $ relationships['bj'] += 3
-      $ relationships['brian'] += 1
+label day_1_lunch_table_1:
+  $ relationships["bj"]+=3
+  $ relationships["brian"]+=3
+  $ relationships["arc"]+=3
+  $ relationships["air"]+=3
+  "I think I’ll sit at Abba’s table. He helped me out with my enrollment form earlier, after all."
+  show burrito nervous at left
+  burrito "H-hey, Abba, mind if I sit here?"
+  show bj at right
+  bj "Hm? Oh, the new student!"
+  bj "I suppose we can make room for you on your first day."
+  if (late_on_first_day):
+    show bj annoyed
+    bj "However, being tardy to class is not a good start. This is still your first day, but I hope you won’t repeat the same offense later on."
+    show burrito embarrassed
+    burrito "R-right, I’ll do my best to be on time."
+  show bj normal
+  show burrito normal
+  bj "The office is still dealing with your enrollment form. They probably won’t be done until the end of the day."
+  bj "For now, we’ll just call you by your official name."
+  show burrito surprised
+  burrito "Ehh? But..."
+  show bj at center
+  bj "Anyway, let me introduce you. Everyone, this is Burrito, a new student at Twitch Academy."
+  show burrito normal
+  burrito "Hello everyone, nice to meet you."
 
-    "Table 2 - Gator, Abby, Fonz, Solid Snake":
-      fonz "And thats when she says-"
-      snake "That she admires my Rock Hard Determination!"
-      fonz "She was certainly admiring some hard rocks, haha!"
-      snake "Harha! ... Wait a minute, you're talking about my rock hard body that all the ladies love, right?"
-      fonz "Of course, of course! Hey, Abby, why no laugh? That was comedy gold, right there!"
-      show abby at right
-      abby "I swear you two get dumber by the day. Now, if you want to here something actually funny, let me tell you about-"
-      hide abby
-      gator "Hold up, Abs, guys. Looks like we got company. Can we help you, little guy?"
-      burrito "Well... uh... heh... I was, uh... wondering... if I could sit here?"
-      fonz "I dunno, kid, you look a bit scrawny. Nice color, though."
-      abby "Aww, I think he's cute. We've got enough muscle bound oafs already anyway."
-      gator "Have a seat, kid. kiddo. Now, Abby, where were you... "
-      show abby at right
-      abby "Right, right, so I'm in science class, and one of those creepy little oddish has somehow managed to get himself trapped in the vent chamber..."
-      hide abby
-      "Lunch was actually pretty good. I think I picked the right table. Those guys are pretty funny, and even though I didn't say much and they didn't say much to me, I got the feeling they'd be glad to have me sit with them again tomorrow."
-      $ relationships['gator'] += 3
-      $ relationships['snake'] += 3
+  show arc normal at right
+  bj "Arc is a close friend of mine, and vice-president of the student council. I assume you met him earlier in Ms. Whitney’s class."
+  arc "Hey, I meant to ask you earlier-- Why did you want to come to Twitch Academy?"
+  show burrito nervous
+  "W-what? What’s with that question all of a sudden…? I know that Zapdos naturally look a bit intimidating, but when he talks like that it kinda scares me for real..."
+  burrito "W-well, I was able to get a scholarship here..."
+  show arc surprised
+  arc "...really now? They have scholarships for this place? Wow, you learn something new every day…"
+  show bj sad
+  bj "Arc, not everyone is so privileged as we are. You'd do well to remember that now and again."
+  show burrito normal
+  show bj normal
+  show arc normal
+  arc "...whatever."
+  "Are scholarships really that surprising? I mean, this is an academy, not just some public school, right?"
+  "What’s the deal with this Arc guy, anyway? He doesn’t seem like the type of ‘mon to hang out with someone as respectable as Abba, let alone be the vice-president of the student council..."
+  hide arc
 
-    "Table 3 - ATV, Katie, Digrat":
-      show atv at right
-      atv "I got you THAT time!"
-      hide atv
-      show katie at right
-      katie "One time out of, like, four!"
-      hide katie
-      show atv at right
-      atv "One time’s all that I need to slay you, hah hah!"
-      hide atv
-      show katie at right
-      katie "You are not half the superhero you THINK you are."
-      hide katie
-      show atv at right
-      atv "That’s because I’m not a superhero, I’m a knight."
-      hide atv
-      show digrat at right
-      digrat "If you’re a knight...does that mean you fight for JUSTICE?"
-      hide digrat
-      show atv at right
-      atv "And FREEDOM."
-      burrito "Does that include the freedom to...sit with you guys?"
-      atv "Why yes, mysterious stranger, it does!"
-      hide atv
-      show digrat at right
-      digrat "I don’t think Burrito’s mysterious, he introduced himself in front of the whole class this morning.."
-      hide digrat
-      show katie at right
-      katie "But that doesn’t tell us anything except that he just moved here! What about his hopes, his dreams, his secret past?!"
-      burrito "Um…"
-      hide katie
-      "The rest of lunch with them was really fun, even if it was pretty weird. They were really friendly, even if Digrat stole my utensils to make battlements for his castle, Katie kept asking me weird questions about my past and ATV never stopped being a knight, looking for more dragons to slay. "
-      $ relationships['atv'] += 3
-      $ relationships['katie'] += 3
+  show air normal at right
+  bj "And this is Air, one of the best Ultraball players here."
+  air "Thanks, bro. Just doin’ my thing."
 
-    "Table 4 - Flareon":
-      flareon "…."
-      burrito "H...hi. Um, may I sit here?"
-      flareon "Why?"
-      burrito "I...need a place to sit? Because it’s...lunch, you know? And I like to eat my lunch sitting down, it makes food digest better than eating standing up…! Hah...hahahah…"
-      burrito "I am really bad at this around her."
-      flareon "Fine, go ahead and sit here."
-      burrito "Oh! Okay! Thanks!"
-      burrito "Wow, I didn’t think she’d say yes! Maybe I’m not as bad as I thought!"
-      burrito "She just...got up and moved to another empty table. Nevermind, I’m worse than I thought."
-      brian "It’s okay, she does that to everyone."
-      burrito "I’m starting to understand why she was sitting alone, I think. Anyway..."
-      burrito "Hi! It’s...Brian, right?"
-      brian "That’s me...just Brian. Do you mind if I sit with you?"
-      burrito "Not at all. I promise I won’t even get up and move tables!"
-      "Brian and I had lunch together, just the two of us at that table. He talks a lot more when he’s not around his brother. It was really nice to have somebody to talk to!"
-      $ relationships['flareon'] += 1
-      $ relationships['brian'] += 3
+  # Air character panel appears, when it exists
+  "CHARACTER PANEL PLACEHOLDER"
+  $ introduced["air"] = True
 
-    "Sit Alone":
-      "On second thought, it’s probably a better idea just to sit by myself on the first day. I don’t know enough about anyone yet…"
-      brian "Um, hello...it’s your first day, right?"
-      burrito "Hi! It’s...Brian, right?"
-      brian "That’s me...just Brian. Do you mind if I sit with you?"
-      
-      menu:
-        "Go ahead":
-          $ sat_with_day_1 = "brian"
-          burrito "Not at all. I promise I won’t even get up and move tables!"
-          "Brian and I had lunch together, just the two of us at that table. He talks a lot more when he’s not around his brother. It was really nice to have somebody to talk to!"
-          $ relationships['brian'] += 3
-        "I'd prefer to be alone":
-          $ sat_with_day_1 = "alone"
-          burrito "Um, no thanks. I need some quiet to study."
-          brian "Okay. Sorry."
-          "I couldn’t tell him how nervous I was to try and make friends with the little brother of the most popular person in school, not on my first day."
-          "My first lunch at my new school was totally quiet after that and I was forced to ACTUALLY study. As lunches go, I hope tomorrow’s is better."
+  show air happy
+  air "You should come watch a game sometime. It’s really intense."
+  burrito "Thanks for the invite. That sounds interesting."
+  hide air
+
+  show brian at right
+  bj "And last, but certainly not least, is my younger brother, Brian."
+
+  # Brian character panel appears, when it exists
+  "CHARACTER PANEL PLACEHOLDER"
+  $ introduced["brian"] = True
+
+  show burrito happy
+  burrito "Ah… I didn’t realize you were related! But it’s pretty obvious now that I see you two together."
+  brian "Y-yeah, we get that a lot."
+  brian "So, how are you enjoying it here so far?"
+  show burrito normal 
+  burrito "Well, the campus is much bigger than the schools I’m used to."
+  burrito "It’ll take me a while just to figure out where everything is."
+  brian "I guess that’s to be expected."
+  brian "Feel free to ask me if you need help with anything. I know my way around pretty well."
+  burrito "Thanks, Brian!"
+  brian "No problem."
+  brian "Anyway, we should get started eating before lunch is over."
+  show burrito happy
+  burrito "Yeah, I didn’t realize it earlier, but I’m starving!"
+  hide brian
+  hide bj
+
+  "~munching sound~"
+  "*munch* *munch*"
+  "This is delicious! Tastes just like home..."
+  "~munching sound~"
+  show air surprised at right
+  show brian surprised at center
+  "*munch* *munch*"
+  hide air
+  hide brian
+  show bj surprised at center
+  bj "…"
+  hide bj
+  show arc smiling at right
+  arc "..."
+  hide arc
+  show burrito nervous 
+  "Whoops- almost forgot I wasn’t alone with my burritos! Hope they don’t think I’m too weird…"
+  hide arc
+  hide bj
+  show brian normal at right
+  show burrito embarrassed at left
+  brian "You really do enjoy burritos, don’t you?"
+  burrito "Y-yeah..."
+  hide burrito
+  hide brian
+  show arc normal at left
+  show air normal at right
+  arc "You know what I enjoy?"
+  show arc happy
+  arc "Berries jubilee!"
+  arc "The combination of sweet berries with cold vanilla ice cream… Hey, I just got an idea."
+  arc "Maybe I can convince the cafeteria to serve it!"
+  air "Want to know what I enjoy?"
+  air "Pure, simple water."
+  air "It's so refreshing, especially after playing a game of Ultraball. Gotta keep myself quenched when I’m moving around like that!"
+  air "Man, now I feel like going out to play instead of going to class."
+
+  "*~Bell ring~*"
+  show arc annoyed
+  hide air
+  show brian normal at right
+  brian "Eh… looks like lunch is over."
+  hide arc
+  hide brian
+  show burrito normal at left
+  show bj normal at right
+  bj "Well, you proved to be a pleasant lunchtime companion, Burrito. With that, I hope you will join us again sometime."
+  burrito "Thanks, Abba."
+  hide bj
+  show arc normal at right
+  arc "Meh… I don’t feel like moving yet, but whatever… See ya around."
+  hide right
+  show air happy at right
+  air "Maybe you guys can come play some Ultraball later!"
+  hide air
+  "A student council president and his little brother, a very privileged Zapdos as the vice-president, and a dedicated Ultraball player."
+  "It’s amazing how a variety of personalities can get along together. Maybe I’ll hang out with them some more later."
+  "Oops, time to head back to class."
+  hide Burrito
+
   return

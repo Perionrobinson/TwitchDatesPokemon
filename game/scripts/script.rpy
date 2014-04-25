@@ -14,6 +14,10 @@ image burrito normal = "assets/portraits/burrito.png"
 image burrito confused = "assets/portraits/burrito.png"
 image burrito smile = "assets/portraits/burrito.png"
 image burrito exasperated = "assets/portraits/burrito.png"
+image burrito nervous = "assets/portraits/burrito.png"
+image burrito embarrassed = "assets/portraits/burrito.png"
+image burrito happy = "assets/portraits/burrito.png"
+image burrito surprised = "assets/portraits/burrito.png"
 image right placeholder_gator = "assets/portraits/placeholder_generic.png"
 image right placeholder_xatu = "assets/portraits/placeholder_generic.png"
 image katie = "assets/portraits/katie.png"
@@ -39,6 +43,23 @@ image digrat excited = "assets/portraits/digrat_placeholder.jpg"
 image digrat sad = "assets/portraits/digrat_placeholder.jpg"
 image digrat nervous = "assets/portraits/digrat_placeholder.jpg"
 image snake = "assets/portraits/snake.png"
+image arc = "assets/portraits/placeholder_generic.png"
+image arc normal = "assets/portraits/placeholder_generic.png"
+image arc happy = "assets/portraits/placeholder_generic.png"
+image arc annoyed = "assets/portraits/placeholder_generic.png"
+image arc surprised = "assets/portraits/placeholder_generic.png"
+image arc smiling = "assets/portraits/placeholder_generic.png"
+image bj = "assets/portraits/placeholder_generic.png"
+image bj normal = "assets/portraits/placeholder_generic.png"
+image bj annoyed = "assets/portraits/placeholder_generic.png"
+image bj sad = "assets/portraits/placeholder_generic.png"
+image bj surprised = "assets/portraits/placeholder_generic.png"
+image air normal = "assets/portraits/placeholder_generic.png"
+image air surprised = "assets/portraits/placeholder_generic.png"
+image air happy = "assets/portraits/placeholder_generic.png"
+image brian = "assets/portraits/placeholder_generic.png"
+image brian normal = "assets/portraits/placeholder_generic.png"
+image brian surprised = "assets/portraits/placeholder_generic.png"
 
 #special text and images
 image letter_map = "assets/backgrounds/letter_map.png"
@@ -54,7 +75,7 @@ define atv = Character('ATV', color="#550000")
 define digrat = Character('Digrat', color="#AA66AA")
 define gyra = Character('Gyra', color="4455CC")
 define bj = Character('BJ', color="777777")
-define aj = Character('AJ', color="777777")
+define arc = Character('AJ', color="777777")
 define uk = Character('???',color="#FFFFFF")
 define xa = Character('Will',color="#84EFE5")
 define mw = Character('Ms. Whitney', color= "#FFAA99")
@@ -74,14 +95,27 @@ label splashscreen:
 
 # The game starts here.
 label start:
-    $ relationships = {'atv': 0,
-                   'katie': 0,
-                   'gator': 0,
-                   'snake': 0,
-                   'brian': 0,
-                   'bj': 0,
-                   'flareon': 0
-                  }
+    $ relationships = { 'atv': 0,
+                        'katie': 0,
+                        'gator': 0,
+                        'snake': 0,
+                        'brian': 0,
+                        'bj': 0,
+                        'flareon': 0,
+                        'arc': 0,
+                        'air': 0
+                      }
+    $ introduced = {    'atv': False,
+                        'katie': False,
+                        'gator': False,
+                        'snake': False,
+                        'brian': False,
+                        'bj': False,
+                        'flareon': False,
+                        'arc': False,
+                        'air': False
+                      }
+                      
 
     stop music
     $ day = Day()

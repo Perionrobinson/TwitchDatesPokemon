@@ -40,7 +40,7 @@ label dorm_scene_1:
   burrito "He’s… odd. But he seems nice. This would be a good time to leave for class, considering the time, but maybe I could squeeze in some extra chat with Will before going…"
   menu:
     "Stay and chat":
-      $ menu_flag1 = True
+      $ late_on_first_day = True
       burrito "Well, not much harm in staying a few extra minutes. I can just rush breakfast and get to class in time, right?"
       show burrito at left
       show right placeholder_xatu at right
@@ -61,7 +61,7 @@ label dorm_scene_1:
       xa "..."
       $ relationships['gator'] += 3
     "Get to class":
-      $ menu_flag1 = False
+      $ late_on_first_day = False
       burrito "Better safe than sorry. I have the whole year to chat with Will, and being late on my first day won’t do me any good."
       show burrito at left
       show right placeholder_xatu at right
