@@ -12,7 +12,7 @@ label class_scene_1:
   gator "Sorry? Why’re you apologizing to me? You’re the one who’s going to get kicked out. And on your first day, too. Tch..."
   uk "Gator, do you have to do this to every new student on their first day?"
   gator "Hey! I was just getting started with this poor fella!"
-  gator "Well, since that  joke’s been ruined..."
+  gator "Well, since that joke’s been ruined..."
   gator "It's nice to meet you!"
   uk "Don't you have a class to get to, Gator?"
   gator "I dunno, do I?"
@@ -21,7 +21,7 @@ label class_scene_1:
   hide right placeholder_gator
   $ relationships['gator'] += 1
   uk "Now then..."
-  show generic_character at right
+  show bj at right
   bj "Hello, sophomore. My name is Abba. I am the head of the student council, third year class rep, and your guide to your first class."
   if(late_on_first_day):
     bj "Incidentally, you are slightly tardy. A rather poor show, for your first day."
@@ -40,7 +40,7 @@ label class_scene_1:
   bj "Hmm? But that would mean you are not enrolled in this school."
   burrito "No, I am! I'm a transfer student; today is my first day."
   menu:
-    "admit burrito is your nickname":
+    "Admit burrito is your nickname":
       burrito "Look, this is just a big misunderstanding. See, Burrito is what they called me back home, but it's just a nickname."
       bj "Hmm. Cute. I'm not quite sure how it got on the enrollment form... Nevertheless, I'll take it down to the office and get it sorted out. You may have to endure a class of everyone calling you Burrito, but knowing Ms. Whitney… Well, Burrito is probably better than Fluffy Sunray or the like."
       hide burrito
@@ -60,7 +60,7 @@ label class_scene_1:
   bj "Not a problem. I hope to see you again soon."
   $ relationships['bj'] += 1
   hide burrito
-  hide generic_character
+  hide bj
   burrito "Alright, I just need to follow Abba’s directions to the letter and… hey! Is that… yeah, it is. The biology lab!"
   burrito "Shoot, I’m a little late. Still, I’m sure Ms. Whitney will forgive me since it’s my first day. Alright, here goes!"
   show burrito at left
@@ -116,7 +116,7 @@ label class_scene_1:
       zoom 1.0
       xalign 0.0 yalign 1.0
   mw "Hello, dears, and welcome to the start of a fun new school year! But before we can get to the wonders of biology-"
-  "everyone" "Groan…"
+  "Everyone" "Groan…"
   mw "We need to take roll! Look alive, everybody. Arc?"
   arc "Present."
   mw "Brian?"
@@ -135,7 +135,7 @@ label class_scene_1:
   mw ". . .Fonzie-pie, see me after class."
   fonz "...!"
   mw "Is that all, everyone?"
-  "pidgey" "I’d like to know-"
+  brian "I’d like to know-"
   mw "Great! I'm sure you are all itching to find out more about Burrito, but for now, it's time to learn!"
   burrito "My name is actually-"
   mw "Learning time, Burrito. Start learning."
@@ -147,7 +147,7 @@ label class_scene_1:
        xalign 0.0 yalign 1.0
   burrito "But then again, Burrito is kind of cute... I just wish I knew what Mom was thinking when she put that as my official name."
   arc "Are you talking to yourself?"
-  show generic_character at right
+  show arc at right
   arc "About… burritos? Seems rather vain, given your name."
   burrito "Oh, um. Yeah. I like burritos. It’s kind of a family tradition that we make burritos with super-spicy salsa for our first meal each time we go to a new school."
   arc "Quaint. My first day rituals involve proclaiming, 'I am an Archangel of JUSTICE! BOOORAAZZZ!'"
@@ -156,7 +156,7 @@ label class_scene_1:
   mw "I was just asking who wanted to hand out the syllabus. You clearly have too much energy, so you can do it, Sparky!"
   arc "My name is Arc, not Sparky. And I refuse to serve. Do you know how many servants I have at home? I will not lower myself to the level of… of... manual labor."
   mw "Aw, that’s a shame. Your grades could really do with a bit of a boost in my class, you know. It’s not often I’m willing to hand out extra credit so easily. Plus, I’m telling you to."
-  show generic_character:
+  show arc:
       linear 1.0 xalign 1.6
   arc "I'll file a lawsuit, just wait and see…"
   mw "That’s nice, Sparky."
