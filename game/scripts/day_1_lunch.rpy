@@ -83,9 +83,8 @@ label day_1_lunch_table_1:
   burrito "Thanks for the invite. That sounds interesting."
   hide air
 
-  show brian at right
+  show brian normal at right
   bj "And last, but certainly not least, is my younger brother, Brian."
-
   # Brian character panel appears, when it exists
   "CHARACTER PANEL PLACEHOLDER"
   $ introduced["brian"] = True
@@ -423,7 +422,7 @@ label day_1_lunch_table_4:
     "My cousins grow their own Tamato and Kelpsy berries and have specifically bred them to be really, really hot. Only the bravest of tongues can handle its fiery taste!"
     flareon "..."
     "But the Flareon doesn’t react. I simply look on, agape with fear. Any second now she’ll be howling in pain."
-    show flareon small smile at right
+    show flareon small_smile at right
     flareon "...It's good."
     
     # Flareon character panel appears, when it exists
@@ -449,7 +448,7 @@ label day_1_lunch_table_4:
             burrito "See, the temperature is SUPER important! Otherwise it won’t bring out the flavor, right?"
             show burrito sad at left
             burrito "Or... at least, that’s what my mom tells me... Sorry, this must all be very boring for you."
-            show flareon small smile at right
+            show flareon small_smile at right
             flareon "..."
             "I’ll take that as a maybe."
             show burrito embarrassed at left
@@ -479,7 +478,7 @@ label day_1_lunch_table_4:
             flareon "..."
             "I could see her giving glances at me from the corner of her eye. Not sure what that means, but I think she's actually trying to communicate!"
             show burrito nervous at left
-            show flareon small smile at right
+            show flareon small_smile at right
             flareon "..."
             "She nodded again."
             "And nothing else."
@@ -491,9 +490,9 @@ label day_1_lunch_table_4:
             burrito "Thanks for letting me sit here. Bye!"
             hide burrito with moveoutright
             #Need flareon to move slightly before leaving
-            #show flareon small smile
+            #show flareon small_smile
             flareon "..."
-            hide flareon small smile with moveoutright
+            hide flareon small_smile with moveoutright
             "Oh... I just realized... I never found out her name..."
             "I'm looking forward to seeing her again, though. Such a mysterious girl..."
         "Of course I did!":
