@@ -12,7 +12,7 @@ label day_1_lunch:
     "Table 1; Abba, Arc, Brian, ??? (Lapras)":
       call day_1_lunch_table_1
     "Table 2; ATV, Katie, ???(Raticate)":
-      # call day_1_lunch_table_2
+      call day_1_lunch_table_2
       $ do_nothing_yet = True
     "Table 3; Lazor, Fonz, ??? (Steelix), ??? (Charmeleon)":
       # call day_1_lunch_table_3
@@ -119,7 +119,7 @@ label day_1_lunch_table_1:
   show bj surprised at center
   bj "…"
   hide bj
-  show arc smiling at right
+  show arc smile at right
   arc "..."
   hide arc
   show burrito nervous 
@@ -168,6 +168,191 @@ label day_1_lunch_table_1:
   hide Burrito
 
   return
+
+label day_1_lunch_table_2:
+  "ATV is looking at something on his phone. Hope I'm not interrupting anything important."
+  show burrito nervous at left
+  burrito "Hi, umm... Do you mind if I sit here?"
+  show atv laughing at right
+  show atv laughing
+  atv "Oh, it’s the Burrito kid, vehvehvehveh."
+  atv "Did you know your new nickname is being spread out to the world as we speak?"
+  show burrito blushing
+  burrito "E-eh?!"
+  show atv laughing
+  atv "Vehvehvehvehveh! Ms. Whitney is an avid PokéBook user."
+  if (introduced["atv"] == False):
+    # Atv character panel appears, when it exists
+    "CHARACTER PANEL PLACEHOLDER"
+    $ introduced["atv"] = True
+  hide atv
+  show katie sighing at right
+  katie "He means he’s a creep who stalks people. Don’t mind him, Burrito."
+  if (introduced["katie"] == False):
+    # Katie character panel appears, when it exists
+    "CHARACTER PANEL PLACEHOLDER"
+    $ introduced["katie"] = True
+  "Oookay, I guess? He doesn’t seem mean, at least."
+  "I'll just sit down and get started on my burritos."
+  hide katie
+  show digrat normal at right
+  digrat "*sniff* *sniff*"
+  show digrat normal
+  digrat "Are those homemade burritos? And mm, mm. Salsa? Is that... Spicy salsa! I smell Tamato and Kelpsy! Some Cheri too!"
+  show burrito surprised
+  burrito "Wow, you can really smell all that? You’re on point!"
+  show digrat happy
+  digrat "Heheh, I do have a good sense of smell. Burrito, eh? Everyone calls me Digrat."
+  hide digrat
+  show katie smile at right
+  katie "My name is Katie, we’re in the same class. "
+  show katie annoyed
+  katie "The rude creep is ATV, by the way."
+  hide katie
+  show atv annoyed at right
+  atv "Sorry if reading information openly on PokéBook means I’m a creep. Blame the content creator, not the reader!"
+  show burrito smile
+  burrito "It’s all right, it’s all right. Ah, Digrat was it? If you want some salsa..."
+  hide atv
+  show digrat normal at right
+  digrat "Ah, no, I’m weak to spicy things. My muzzle is tingling!"
+  digrat "Katie might want it though. She doesn’t mind hot food."
+  hide digrat
+  show katie smile at right
+  katie "I can handle spicy food alright..."
+  show katie aside
+  katie "...unlike ATV here."
+  hide burrito
+  show atv sneering at left
+  atv "Vehvehvehveh... I don’t need to remind you of the Octopus Incident, do I?"
+  show katie embarrassed
+  katie "H-hey, quit it..!"
+  hide katie
+  hide atv
+  show burrito normal at left
+  "ATV looks like he had just won a battle against Katie, who just mumbles to herself and concentrates on her food. Octopus incident? What are they talking about?"
+  menu:
+    "Ask about the Octopus Incident":
+      "Curiosity gets the best of me, and I turn towards ATV."
+      show atv sneering at right
+      show burrito curious
+      burrito "What is the Octopus Incident?"
+      atv "It was last year. Katie came over to eat lunch with Lance-sensei, and there was octopus on the menu."
+      show atv laughing
+      atv "The face Katie made when she saw it... Veeehvehvehvehveh!"
+      hide atv
+      show katie embarrassed at right
+      katie "I-I don’t like t-their eyes, okay?! They look creepy! Like you!"
+      "The Dragonite cast me a glare before looking down to her plate, eating quickly. I don’t think she was very amused by my inquiry. ATV, though, seemed blissfuly happy."
+      hide katie
+      $ relationships["atv"]+=3
+      $ relationships["katie"]-=3
+
+    "Don’t ask":
+      "I open my mouth to ask, but decide against it. Katie seemed embarrassed enough as it was, and I didn’t want to make her too uncomfortable."
+      show katie small_smile at right
+      "She notices that, and shoots me a tiny smile as thanks."
+      hide katie
+      $ relationships["katie"]+=3
+
+  show atv normal at right
+  atv "So, Burrito. Are you planning on joining a club?"
+  show burrito thinking
+  burrito "Hmm... I haven’t really thought about it yet; I just got here."
+  show burrito normal
+  burrito "Are you in a club?"
+  show atv proud
+  atv "As a matter of fact, you are looking at the president and senior member of Twitch Academy’s resident Science Club!"
+  hide atv
+  show katie aside at right
+  katie "And only member."
+  hide burrito
+  show atv angry at left
+  atv "I will not have my status trivialized!"
+  hide atv
+  hide katie
+  show digrat normal at right
+  show burrito normal at left
+  digrat "It’s good to just ignore him when he gets like this, newbie."
+  show burrito aside
+  burrito "I see, I se--ACHOO!"
+  hide digrat
+  "~flapping sound~"
+  "V-Venomoth powder...?!"
+  "Ow, my nose..!"
+  show atv angry at right
+  atv "I will not be left out of conversations either!"
+  show atv curious
+  atv "Now, what were we talking about?"
+  show burrito awkward
+  burrito "Uh..."
+  hide burrito
+  show katie normal at left
+  katie "...pest problems."
+  hide katie
+  show digrat normal at left
+  digrat "Yeah, pest-- choo! Pest problems!"
+  hide digrat
+  show burrito normal at left
+  show atv normal
+  atv "Ah, you must mean the fungal overgrowth located in the back of Ms. Whitney’s classroom, underneath the third seat from the back in the left-most row."
+  show burrito confused
+  burrito "The... the what? Why would yo--"
+  show atv sneering
+  atv "Vehvehvehveh... My dear Burrito, when you have an intellectual thirst like mine the pursuit and acquisition of knowledge satisfies me in an unparalleled way."
+  show atv proud
+  atv "To put it simply..."
+  "Uh-oh."
+  atv "I consider it my duty to study and solve life’s mysteries."
+  hide burrito
+  show katie sneering at left
+  katie "Sure, when you’re not busy gorging yourself on those inane comics of yours."
+  show atv annoyed
+  atv "I-Why... You... Take that back!"
+  show katie smirk
+  katie "Or what?"
+  hide atv
+  show digrat normal at right
+  digrat "C’mon Katie, don’t tease him like this. You know how he gets."
+  hide digrat
+  show atv annoyed at right
+  atv "I don’t get anything, Digrat!"
+  hide atv
+  show digrat snicker at right
+  show katie snicker
+  "Katie and Digrat shoot each other knowing glances, snickering lightly at ATV’s turn of phrase."
+  hide digrat
+  show atv annoyed at right
+  atv "I am merely passionate about an art form that deserves to be respected!"
+  show katie eyeroll
+  katie "Please, it’s nothing more than gussied up stories made to sell toys to little Pokemon."
+  hide katie
+  show burrito confused at left
+  burrito "Um, excuse me, but what exactly are you guys talking about?"
+  show atv happy
+  atv "Oh? Do you not read “The A Team,” Burrito? It’s a fantastic series!"
+  "Uh oh, I think I just stepped on another trap..."
+  "~bell rings~"
+  "...perfect timing!"
+
+  if (late_on_first_day):
+    show burrito normal
+    burrito "Ah, sorry guys, I’d love to stay and chat but I was late to class earlier this morning, and I don’t want that to happen again."
+    show atv normal 
+    atv "Vehvehveh... Alright. We’ll talk another time."
+
+  else:
+    hide atv
+    show katie normal at right
+    burrito "Well, looks like lunch is over. Maybe I’ll see you guys later?"
+    show katie happy
+    katie "Sure! See you around, Burrito!"
+  
+  return
+
+label day_1_lunch_table_3:
+  return
+
 
 label day_1_lunch_table_4:
     $ relationships["flareon"]+=3
@@ -462,7 +647,7 @@ label day_1_lunch_table_5:
             brian "Haah..."
             show brian at right
             brian "Aah."
-            show brian smiling at right
+            show brian smile at right
             brian "Wow, that really did the trick!"
             show burrito smile at left
             burrito "I know, right?"
@@ -486,7 +671,7 @@ label day_1_lunch_table_5:
             brian "Oh, looks like lunch is over. Thanks for letting me sit here, Burrito!"
             show burrito smile at left
             burrito "No problem! It was great talking with you. I hope we can have another lunch like this."
-            show brian smiling at right
+            show brian smile at right
             brian "Me too! Bye!"
             burrito "Bye!"
             hide burrito
