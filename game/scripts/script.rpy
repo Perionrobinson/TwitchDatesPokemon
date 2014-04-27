@@ -8,6 +8,8 @@ image bg black = Solid((0, 0, 0, 255))
 image bg standard = Solid("#808080")
 image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
 image outside = "assets/backgrounds/outside.jpg"
+image gallery_test_1 = "assets/backgrounds/gallerytest1.png"
+image gallery_test_2 = "assets/backgrounds/gallerytest2.png"
 
 # Characters
 # Burrito
