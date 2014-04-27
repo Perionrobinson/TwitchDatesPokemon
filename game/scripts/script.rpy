@@ -1,7 +1,9 @@
 # You can place the script of your game in this file.
 
 # Backgrounds
-image splash_image = "assets/backgrounds/start.png"
+image logo = "assets/backgrounds/logo.png"
+image mm = "assets/backgrounds/start.png"
+image gm = "assets/backgrounds/dorm.jpg"
 image bg black = Solid((0, 0, 0, 255))
 image bg standard = Solid("#808080")
 image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
@@ -158,7 +160,7 @@ define flareon = Character('Flareon', color="AA0000")
 
 #relationship_tracking
 label splashscreen:
-    show splash_image
+    show logo
     $ renpy.pause()
     return
 

@@ -71,12 +71,12 @@ init -1 python hide:
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#b38698",
+        mm_root = "mm",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#b38698",
+        gm_root = "gm",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
@@ -96,7 +96,8 @@ init -1 python hide:
     ## are the size of the left/right and top/bottom borders,
     ## respectively.
 
-    # style.window.background = Frame("frame.png", 12, 12)
+    #Dialogue box thing
+    #style.window.background = Frame("assets/menu/selector.png", 12, 12)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
