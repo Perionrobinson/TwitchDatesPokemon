@@ -97,7 +97,7 @@ init -1 python hide:
     ## respectively.
 
     #Dialogue box thing
-    #style.window.background = Frame("assets/menu/selector.png", 12, 12)
+    style.window.background = Frame("assets/menu/selector.png", 12, 12)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
