@@ -194,6 +194,7 @@ screen main_menu:
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Gallery") action ShowMenu("gallery")
+        textbutton _("Music Room") action ShowMenu("music_room")
         textbutton _("Preferences") action ShowMenu("preferences")
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit(confirm=False)
