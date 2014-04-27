@@ -8,6 +8,7 @@ image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
 image outside = "assets/backgrounds/outside.jpg"
 
 # Characters
+# Burrito
 image burrito = "assets/portraits/burrito.png"
 image burrito_voiceover = im.Alpha("assets/portraits/burrito.png", 0.5)
 image burrito normal = "assets/portraits/burrito.png"
@@ -29,9 +30,13 @@ image burrito curious = "assets/portraits/burrito.png"
 image burrito thinking = "assets/portraits/burrito.png"
 image burrito aside = "assets/portraits/burrito.png"
 image burrito awkward = "assets/portraits/burrito.png"
+
+# Placeholders
 image right placeholder_gator = "assets/portraits/placeholder_generic.png"
 image right placeholder_xatu = "assets/portraits/placeholder_generic.png"
 image generic_character = "assets/portraits/placeholder_generic.png"
+
+# Katie
 image katie = im.Scale("assets/portraits/katie.png", 300, 500)
 image katie normal = im.Scale("assets/portraits/katie.png", 300, 500)
 image katie angry = im.Scale("assets/portraits/katie.png", 300, 500)
@@ -49,6 +54,8 @@ image katie sneering = im.Scale("assets/portraits/katie.png", 300, 500)
 image katie smirk = im.Scale("assets/portraits/katie.png", 300, 500)
 image katie eyeroll = im.Scale("assets/portraits/katie.png", 300, 500)
 image katie happy = im.Scale("assets/portraits/katie.png", 300, 500)
+
+# ATV
 image atv = im.Scale("assets/portraits/atv.png", 300, 500)
 image atv normal = im.Scale("assets/portraits/atv.png", 300, 500)
 image atv smile = im.Scale("assets/portraits/atv.png", 300, 500)
@@ -61,7 +68,11 @@ image atv sneering = im.Scale("assets/portraits/atv.png", 300, 500)
 image atv proud = im.Scale("assets/portraits/atv.png", 300, 500)
 image atv curious = im.Scale("assets/portraits/atv.png", 300, 500)
 image atv happy = im.Scale("assets/portraits/atv.png", 300, 500)
+
+# Abby
 image abby = im.Scale("assets/portraits/abby.png", 300, 500)
+
+# Digrat
 image digrat = im.Scale("assets/portraits/digrat.png", 300, 500)
 image digrat normal = im.Scale("assets/portraits/digrat.png", 300, 500)
 image digrat smile = im.Scale("assets/portraits/digrat.png", 300, 500)
@@ -70,21 +81,31 @@ image digrat sad = im.Scale("assets/portraits/digrat.png", 300, 500)
 image digrat nervous = im.Scale("assets/portraits/digrat.png", 300, 500)
 image digrat happy = im.Scale("assets/portraits/digrat.png", 300, 500)
 image digrat snicker = im.Scale("assets/portraits/digrat.png", 300, 500)
+
+# Snake
 image snake = im.Scale("assets/portraits/snake.png", 300, 500)
+
+# Arc
 image arc = im.Scale("assets/portraits/aj.png", 300, 500)
 image arc normal = im.Scale("assets/portraits/aj.png", 300, 500)
 image arc happy = im.Scale("assets/portraits/aj.png", 300, 500)
 image arc annoyed = im.Scale("assets/portraits/aj.png", 300, 500)
 image arc surprised = im.Scale("assets/portraits/aj.png", 300, 500)
 image arc smile = im.Scale("assets/portraits/aj.png", 300, 500)
+
+# BJ
 image bj = im.Scale("assets/portraits/bj.png", 300, 500)
 image bj normal = im.Scale("assets/portraits/bj.png", 300, 500)
 image bj annoyed = im.Scale("assets/portraits/bj.png", 300, 500)
 image bj sad = im.Scale("assets/portraits/bj.png", 300, 500)
 image bj surprised = im.Scale("assets/portraits/bj.png", 300, 500)
+
+# Air
 image air normal = im.Scale("assets/portraits/air.png", 300, 500)
 image air surprised = im.Scale("assets/portraits/air.png", 300, 500)
 image air happy = im.Scale("assets/portraits/air.png", 300, 500)
+
+# Brian
 image brian = im.Scale("assets/portraits/brian.png", 300, 500)
 image brian normal = im.Scale("assets/portraits/brian.png", 300, 500)
 image brian surprised = im.Scale("assets/portraits/brian.png", 300, 500)
@@ -95,8 +116,18 @@ image brian sweating = im.Scale("assets/portraits/brian.png", 300, 500)
 image brian panting = im.Scale("assets/portraits/brian.png", 300, 500)
 image brian smile = im.Scale("assets/portraits/brian.png", 300, 500)
 image brian sad = im.Scale("assets/portraits/brian.png", 300, 500)
+
+# Flareon
 image flareon = im.Scale("assets/portraits/flareon.png", 300, 500)
 image flareon small_smile = im.Scale("assets/portraits/flareon.png", 300, 500)
+
+# Gator
+image gator = im.Scale("assets/portraits/gator.png", 300, 500)
+
+# Fontz
+image fontz = im.Scale("assets/portraits/gator.png", 300, 500)
+
+# Etc.
 image gyra = "assets/portraits/gyra.jpg"
 
 #special text and images
@@ -105,7 +136,7 @@ image train_text = Text("...oh yeah, I’m on the train. Guess I fell asleep on 
 #image train_back = ""
 #image burrito_char_pan = ""
 #image letter = ""
-#image burrito_dorm = ""
+image dorm = "assets/backgrounds/dorm.jpg"
 # Declare characters used by this game.
 define burrito = Character('Burrito', color="#c8ffc8")
 define katie = Character('Katie', color="#00afc8")

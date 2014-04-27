@@ -6,7 +6,7 @@ label dorm_scene_1:
   burrito "W...what was that?!"
   hide burrito 
   burrito "There's a strange figure in front of the window, wings outstretched. It's a...a…"
-  scene bg standard with dissolve
+  scene dorm with dissolve
   show burrito at left
   show burrito_voiceover at left
   burrito "a xatu?"
@@ -70,7 +70,7 @@ label dorm_scene_1:
       $ relationships['atv'] += 2
       $ relationships['katie'] += 2
       $ relationships['bj'] += 2
-  scene bg standard with dissolve
+  scene bg standard with dissolve #hallway
   show burrito_voiceover at left
   burrito "My stomach's growling. I think my mother said something about sending breakfast with me…  Ah, here it is! A box of poffins buried under the mountain of salsa.They’re just for me! I sure am glad that mom made me this delicious breakfast. Mmm. Tastes like cupcake. I eat a few before changing into my uniform.
   Nice. I don’t have the standard issue uniform most new students get yet, so I’ll just have to wear my old school uniform. Still, it’s not half bad. Hehe… Time to head to class. (image fades)"

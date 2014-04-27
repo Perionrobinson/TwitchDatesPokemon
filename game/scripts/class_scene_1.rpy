@@ -6,7 +6,7 @@ label class_scene_1:
   uk "Hey, Junior. Just where do you think you're going in such a hurry? It looks to me like you’re running in the hallway."
   burrito "W...what? Who said that?"
   uk "Up here, new kid."
-  show right placeholder_gator at right
+  show gator at right
   gator "The name's Lazor. Lazor Gator. Has no one ever told you that running in the halls is an offense worthy of expulsion?"
   burrito "S... Sorry, Lazor Gator…"
   gator "Sorry? Why’re you apologizing to me? You’re the one who’s going to get kicked out. And on your first day, too. Tch..."
@@ -18,7 +18,7 @@ label class_scene_1:
   gator "I dunno, do I?"
   uk "Mmm. Well, if your intent is to play this little game of yours, so be it. I've important matters to attend to, like directing this little Espeon here to class."
   gator "Ugh. Boring. I’m off."
-  hide right placeholder_gator
+  hide gator
   $ relationships['gator'] += 1
   uk "Now then..."
   show bj at right

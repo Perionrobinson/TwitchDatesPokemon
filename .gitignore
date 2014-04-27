@@ -6,3 +6,4 @@ log.txt
 errors.txt
 traceback.txt
 tmp/*
+.android.json
