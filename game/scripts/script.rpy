@@ -139,7 +139,8 @@ image letter_map = "assets/backgrounds/letter_map.png"
 #image train_back = ""
 #image burrito_char_pan = ""
 #image letter = ""
-image dorm = "assets/backgrounds/dorm.jpg"
+image dorm = im.Scale("assets/backgrounds/dorm.jpg", 800, 600)
+
 # Declare characters used by this game.
 define burrito = Character('Burrito', color="#c8ffc8")
 define katie = Character('Katie', color="#00afc8")
