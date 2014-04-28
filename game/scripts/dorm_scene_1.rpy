@@ -15,6 +15,12 @@ label dorm_scene_1:
   burrito "Oh. You must be my roommate. Wait, that’s right! I heard about you in the acceptance letter. Hello there!"
   xa "..."
   burrito "I'm RJ, nice to meet you!"
+
+
+  #Pause test
+  $ renpy.pause(30, hard=True)
+
+
   xa "..."
   burrito "..."
   xa "..."
