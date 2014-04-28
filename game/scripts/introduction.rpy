@@ -23,17 +23,35 @@ label introduction:
     burrito "….Zzzzzhngh?"
     #show train_back
     
-    #make burrito opaque
     hide burrito
-    show train_text at top
-    pause
+
+    show burrito_voiceover at left
+
+    "...oh yeah, I’m… I’m in the train."
+    "Guess I fell asleep on the way here. Funny how moving can really tire you out."
+    "The announcer's voice reminds me of my destination."
+    "Twitch Academy."
+    "Twitch Academy. Twitch. Academy."
+    "I keep repeating the words in my head but it doesn't make it seem any more real."
+    "Ever since I was a young Eevee, everyone spoke of how incredible a school it is."
+    "The high standards, the prestigious teachers - and past students who went on to illustrious careers! -, everything a star school should have."
+    "And now, as an Espeon, I will be one of those students!... Hopefully."
+    "Heh. 'Espeon'... Even that is new to me. For the longest time I knew I wanted to be an Espeon. It was taking me forever to evolve. So many of my old teachers suggested I just be like all the other Eevees and use a stone to evolve, but... I finally did it."
+    "I’m an Espeon. The Sun Pokémon. Symbol of a new day! And a new beginning!"
+    "And now I’ll have a chance to prove myself at Twitch Academy."
+    "I wonder what my classmates will be like... I just hope I can make some friends."
+    "Of course, I'll still need to keep my grades up."
+    "But I can't focus too much on study or I won't have any friends!"
+    "B-but if I slack off too much, I'll have bad grades, which could get me expelled!"
+    "Oh, Arceus, I also need to work on my schedule, and make sure tha-!"
+
     #play sound "ding_dong.mp3"
-    hide train_text
 
     'Announcer' "Arriving at: Twitch Academy."
     
-    #show burrito_char_pan
-    show burrito
+    #show burrito character panel
+	
+    show burrito at left
     burrito "...it's my stop!"
     
     #hide burrito_char_pan

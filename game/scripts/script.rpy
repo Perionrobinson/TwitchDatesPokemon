@@ -135,8 +135,7 @@ image fontz = im.Scale("assets/portraits/gator.png", 300, 500)
 image gyra = "assets/portraits/gyra.jpg"
 
 #special text and images
-image letter_map = "assets/backgrounds/letter_map.png"
-image train_text = Text("...oh yeah, I’m on the train. Guess I fell asleep on the way here.\nFunny how much moving can tire you out.\nThe announcer's voice... ah. My next stop: Twitch Academy.\nI keep repeating those two words in my head, but it still doesn't feel real. Ever since I was small I'd heard about how incredible this school was. High standards, prestigious teachers, and plenty of students who went on to illustrious careers!\nEverything a star school should have.\nI was a lucky enough Espeon that now I was going to be one of those students!\n'Espeon'...\nEven that is new to me. I wanted to be an Espeon for the longest time, but it was taking me forever to evolve. My old teachers asked, why couldn't I just be like all the other Eevees and use a stone to evolve? But... I just couldn't. Instead, I committed myself to what I wanted, and now here I am - an Espeon. The Sun Pokémon. Symbol of new days and new beginnings!\nNow I’ll have to prove myself at Twitch Academy. I wonder what my classmates will be like... I hope I can make some friends!")   
+image letter_map = "assets/backgrounds/letter_map.png"  
 #image train_back = ""
 #image burrito_char_pan = ""
 #image letter = ""
