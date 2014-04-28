@@ -288,6 +288,11 @@ init -1 python hide:
     #########################################
     ## More customizations can go here.
 
+    #Button stuff
+    #TODO: Need a regular and hoverover background
+    style.menu_choice_button.background = Frame("assets/menu/selector.png",25,15)
+    style.menu_choice_button.hover_background = Frame("assets/menu/selector.png",25,15)
+
 
 ## This section contains information about how to build your project into
 ## distribution files.
