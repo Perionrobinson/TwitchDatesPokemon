@@ -50,7 +50,7 @@ label introduction:
     'Announcer' "Arriving at: Twitch Academy."
     
     #show burrito character panel
-	
+
     show burrito at left
     burrito "...it's my stop!"
     
