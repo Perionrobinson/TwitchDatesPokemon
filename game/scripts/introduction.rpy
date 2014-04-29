@@ -70,12 +70,17 @@ label introduction:
     'Letter' "'Hope you have a wonderful first day at school! Your mother and I are so proud of you! We know you'll do the best you can, whatever you choose to do."
     'Letter' "'Also, I spilled water all over your map, but don't worry  - I'm sure the school hasn't changed much since I was there, so I drew you a new one from memory!'"
     
-    show burrito at left #frowning
+    show burrito frowning at left
     show letter_map at topright
     pause
     
-    #need slow text
-    burrito "... I don't even know what to say about this."
+    #slow text working!
+    image conBurrito = Text("... I don't even know what to say about this.", slow=True)
+    
+    show conBurrito with Pause(3.0)
+    $ renpy.pause()
+    hide conBurrito
+    
     hide burrito
     hide letter_map
     #some kind of transition?

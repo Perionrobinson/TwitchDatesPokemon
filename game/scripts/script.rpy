@@ -34,6 +34,7 @@ image burrito curious = "assets/portraits/burrito.png"
 image burrito thinking = "assets/portraits/burrito.png"
 image burrito aside = "assets/portraits/burrito.png"
 image burrito awkward = "assets/portraits/burrito.png"
+image burrito frowning = "assets/portraits/burrito.png"
 
 # Placeholders
 image right placeholder_gator = "assets/portraits/placeholder_generic.png"
@@ -164,6 +165,11 @@ define flareon = Character('Flareon', color="AA0000")
 label splashscreen:
     show logo
     $ renpy.pause()
+    hide logo with fade
+    
+    show burrito with fade
+    $ renpy.pause()
+    hide burrito with fade
     return
 
 # The game starts here.
