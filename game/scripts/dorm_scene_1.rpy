@@ -15,6 +15,7 @@ label dorm_scene_1:
   burrito "Oh. You must be my roommate. Wait, that’s right! I heard about you in the acceptance letter. Hello there!"
   xa "..."
   burrito "I'm RJ, nice to meet you!"
+<<<<<<< HEAD
 
 
   #Pause test
@@ -23,6 +24,8 @@ label dorm_scene_1:
   #RIOT test
   uk "ヽ༼ຈل͜ຈ༽ﾉ RIOT ヽ༼ຈل͜ຈ༽ﾉ"
 
+=======
+>>>>>>> origin/master
   xa "..."
   burrito "..."
   xa "..."
