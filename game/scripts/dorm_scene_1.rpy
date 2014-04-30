@@ -19,7 +19,9 @@ label dorm_scene_1:
 
   #Pause test
   #$ renpy.pause(30.0, hard=True)
-
+  
+  #RIOT test
+  uk "ヽ༼ຈل͜ຈ༽ﾉ RIOT ヽ༼ຈل͜ຈ༽ﾉ"
 
   xa "..."
   burrito "..."
