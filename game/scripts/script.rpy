@@ -2,7 +2,7 @@
 
 # Backgrounds
 image logo = "assets/backgrounds/logo.png"
-image mm = "assets/backgrounds/start.png"
+image mm = im.Scale("assets/backgrounds/start.png", 800, 600)
 image gm = "assets/backgrounds/dorm.jpg"
 image bg black = Solid((0, 0, 0, 255))
 image bg standard = Solid("#808080")
