@@ -167,11 +167,7 @@ label splashscreen:
     
     show logo
     $ renpy.pause()
-    hide logo with fade
-    
-    show burrito
-    $ renpy.pause()
-    #hide burrito with fade
+
     return
 
 # The game starts here.
