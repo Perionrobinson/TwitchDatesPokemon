@@ -97,7 +97,7 @@ init -1 python hide:
     ## respectively.
 
     #Dialogue box thing
-    style.window.background = Frame("assets/menu/selector.png", 12, 12)
+    style.window.background = Frame("assets/menu/selector.png", 0, 0)
 
     ## Margin is space surrounding the window, where the background
     ## is not drawn.
@@ -118,7 +118,12 @@ init -1 python hide:
     ## This is the minimum height of the window, including the margins
     ## and padding.
 
-    # style.window.yminimum = 250
+    #style.window.yminimum = 150
+    
+    
+    #character name box test
+    #style.say_who_window.background = Frame("assets/menu/selector.png", 15, 15)
+    #style.say_label.background = Frame("assets/menu/selector.png", 15, 15)
 
 
     #########################################
@@ -146,7 +151,7 @@ init -1 python hide:
 
     ## The file containing the default font.
 
-    # style.default.font = "DejaVuSans.ttf"
+    style.default.font = "assets/fonts/LinBiolinum_R.ttf"
 
     ## The default size of text.
 
