@@ -1,40 +1,91 @@
-init python:
-    g = Gallery()
+init:
+    # Position the navigation on the right side of the screen.
+    $ style.gallery_nav_frame.xpos = 800 - 10
+    $ style.gallery_nav_frame.xanchor = 1.0
+    $ style.gallery_nav_frame.ypos = 12
 
-    # A button that contains an image that automatically unlocks.
-    g.button("gallery_test_1")
-    g.image("gallery_test_1")
-    g.unlock("gallery_test_1")
+    # Add the gallery to the main menu.
+    $ config.main_menu.insert(2, ('Gallery', "gallery", "True"))
 
-    # This button has multiple images assocated with it. We use unlock_image
-    # so we don't have to call both .image and .unlock. We also apply a
-    # transform to the first image.
-    g.button("gallery_test_1")
-    g.unlock_image("gallery_test_1")
+# The entry point to the gallery code.
+label gallery:
+    python hide:
 
-    g.unlock_image("gallery_test_1")
-    g.unlock_image("gallery_test_2")
+        # Construct a new gallery object.
+        g = Gallery()
 
-    # The transition used when switching images.
-    g.transition = dissolve
+        # The image used for locked buttons.
+        g.locked_button = "assets/buttons/lockedart.png"
 
-screen gallery:
+        # The background of a locked image.
+        g.locked_background = Solid("#808080")
 
-    # Ensure this replaces the main menu.
-    tag menu
+        # Frames added over unlocked buttons, in hover and idle states.
+        g.hover_border = "assets/buttons/gallerybuttontest.png"
+        g.idle_border = "assets/buttons/gallerybuttontest.png"
 
-    # The background.
-    add "bg standard"
+        # An images used as the background of the various gallery pages.
+        g.background = Solid((0, 0, 0, 255))
 
-    # A grid of buttons.
-    grid 2 1:
+        # Lay out the gallery images on the screen.
+        # These settings lay images out 3 across and 4 down.
+        # The upper left corner of the gird is at xpos 10, ypos 20.
+        # They expect button images to be 155x112 in size.
+        g.grid_layout((3, 4), (10, 12), (160, 124))
 
-        xfill True
-        yfill True
+        # Show the background page.
+        g.page("Backgrounds")
 
-        # Call make_button to show a particular button.
-        add g.make_button("gallery_test_1", "gallery_test_1", xalign=0.5, yalign=0.5)
+        # Our first button is a picture of the beach.
+        g.button("assets/buttons/backgrounds.png")
+        #
+        # These show images, if they have been unlocked. The image name must
+        # have been defined using an image statement.
+        g.unlock_image("outside")
+        g.unlock_image("placeholder_lunch")
+        #
+        # This shows a displayable...
+        g.display("dorm")
+        # ... if all prior images have been show.
+        g.allprior()
 
-        # The screen is responsible for returning to the main menu. It could also
-        # navigate to other gallery screens.
-        textbutton "Return" action Return() xalign 0.5 yalign 0.5
+        # A second set of images.
+        #g.button("thumb_lighthouse.jpg")
+        #g.unlock_image("bg lighthouse day")
+        #g.unlock_image("bg lighthouse night")
+        #g.display("lighthouse_sketch.jpg")
+        #g.allprior()
+
+
+
+        # We can use g.page to introduce a second page.
+        #g.page("Characters")
+
+        #g.button("thumb_eileen.jpg")
+        #
+        # Note that we can give image and unlock image more than one image
+        # at a time.
+        #g.unlock_image("bg lighthouse day", "eileen day happy")
+        #g.unlock_image("bg lighthouse day", "eileen day mad")
+
+
+
+        # Another page, this one for concept art.
+        g.page("Concept Art")
+
+        g.button("assets/buttons/gallerybuttontest.png")
+        #
+        # We can apply conditions to buttons as well as to images.
+        # The "condition" condition checks an arbitrary expression.
+        #g.condition("persistent.beat_game")
+        #
+        g.display("assets/backgrounds/gallerytest1.png")
+        g.display("assets/backgrounds/gallerytest2.png")
+        g.display("assets/backgrounds/gallerytest3.png")
+        g.display("assets/backgrounds/gallerytest4.png")
+
+
+        # Now, show the gallery.
+        g.show()
+
+    jump main_menu_screen

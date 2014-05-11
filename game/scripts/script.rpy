@@ -8,8 +8,11 @@ image bg black = Solid((0, 0, 0, 255))
 image bg standard = Solid("#808080")
 image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
 image outside = "assets/backgrounds/outside.jpg"
+image gallery_button_test = "assets/buttons/gallerybuttontest.png"
 image gallery_test_1 = "assets/backgrounds/gallerytest1.png"
 image gallery_test_2 = "assets/backgrounds/gallerytest2.png"
+image gallery_test_3 = "assets/backgrounds/gallerytest3.png"
+image gallery_test_4 = "assets/backgrounds/galleryteset4.png"
 
 # Characters
 # Burrito
@@ -172,15 +175,20 @@ label splashscreen:
 
 # The game starts here.
 label start:
-    $ relationships = { 'atv': 0,
-                        'katie': 0,
+    $ relationships = { 'katie': 0,
+                        'katie_major': 0,
                         'gator': 0,
-                        'snake': 0,
+                        'gator_major': 0,
                         'brian': 0,
+                        'brian_major': 0,
                         'bj': 0,
+                        'bj_major': 0,
+                        'abby': 0,
+                        'abby_major': 0,
                         'flareon': 0,
-                        'arc': 0,
-                        'air': 0
+                        'flareon_major': 0,
+                        'air': 0,
+                        'air_major': 0
                       }
     $ introduced = {    'atv': False,
                         'katie': False,
