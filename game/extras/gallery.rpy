@@ -21,8 +21,8 @@ label gallery:
         g.locked_background = Solid("#808080")
 
         # Frames added over unlocked buttons, in hover and idle states.
-        g.hover_border = "assets/buttons/gallerybuttontest.png"
-        g.idle_border = "assets/buttons/gallerybuttontest.png"
+        g.hover_border = "assets/buttons/hoverborder.png"
+        g.idle_border = "assets/buttons/idleborder.png"
 
         # An images used as the background of the various gallery pages.
         g.background = Solid((0, 0, 0, 255))
@@ -59,31 +59,65 @@ label gallery:
 
 
         # We can use g.page to introduce a second page.
-        #g.page("Characters")
-
-        #g.button("thumb_eileen.jpg")
+        g.page("Characters")
         #
         # Note that we can give image and unlock image more than one image
         # at a time.
-        #g.unlock_image("bg lighthouse day", "eileen day happy")
-        #g.unlock_image("bg lighthouse day", "eileen day mad")
+        
+        #Burrito button and images
+        g.button("assets/buttons/burrito.png")
+        g.unlock_image("burrito")
+        g.unlock_image("generic_character", "burrito normal")
+        g.unlock_image("generic_character", "burrito happy")
+        #KT button and images
+        g.button("assets/buttons/katie.png")
+        g.unlock_image("katie")
+        g.unlock_image("generic_character", "katie")
+        g.unlock_image("generic_character", "katie")
 
 
 
         # Another page, this one for concept art.
         g.page("Concept Art")
-
-        g.button("assets/buttons/gallerybuttontest.png")
         #
         # We can apply conditions to buttons as well as to images.
         # The "condition" condition checks an arbitrary expression.
         #g.condition("persistent.beat_game")
         #
-        g.display("assets/backgrounds/gallerytest1.png")
-        g.display("assets/backgrounds/gallerytest2.png")
-        g.display("assets/backgrounds/gallerytest3.png")
-        g.display("assets/backgrounds/gallerytest4.png")
-
+        # Various art
+        g.button("assets/buttons/variousart.png")
+        g.display("assets/gallery/gallerytest1.png")
+        g.display("assets/gallery/gallerytest2.png")
+        g.display("assets/gallery/gallerytest3.png")
+        g.display("assets/gallery/gallerytest4.png")
+        
+        # Placeholder art of characters
+        g.button("assets/buttons/conceptartcharacters.png")
+        g.display("burrito_placeholder")
+        g.display("generic_character")
+        g.display("katie_placeholder")
+        g.display("atv_placeholder")
+        g.display("abby_placeholder")
+        g.display("digrat_placeholder")
+        g.display("snake_placeholder")
+        g.display("arc_placeholder")
+        g.display("bj_placeholder")
+        g.display("air_placeholder")
+        g.display("brian_placeholder")
+        g.display("flareon_placeholder")
+        g.display("gator_placeholder")
+        g.display("fontz_placeholder")
+        g.display("gyra_placeholder")
+        g.allprior()
+        
+        # Placeholder backgrounds
+        g.button("assets/buttons/backgroundplaceholder.png")
+        g.display("start_placeholder")
+        g.display("lunch_placeholder")
+        g.display("dorm_placeholder")
+        g.display("outside_placeholder")
+        g.allprior()
+        
 
         # Now, show the gallery.
         g.show()

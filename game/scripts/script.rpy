@@ -8,11 +8,7 @@ image bg black = Solid((0, 0, 0, 255))
 image bg standard = Solid("#808080")
 image placeholder_lunch = "assets/backgrounds/placeholder_lunchroom.jpg"
 image outside = "assets/backgrounds/outside.jpg"
-image gallery_button_test = "assets/buttons/gallerybuttontest.png"
-image gallery_test_1 = "assets/backgrounds/gallerytest1.png"
-image gallery_test_2 = "assets/backgrounds/gallerytest2.png"
-image gallery_test_3 = "assets/backgrounds/gallerytest3.png"
-image gallery_test_4 = "assets/backgrounds/galleryteset4.png"
+image dorm = im.Scale("assets/backgrounds/dorm.jpg", 800, 600)
 
 # Characters
 # Burrito
@@ -38,11 +34,6 @@ image burrito thinking = "assets/portraits/burrito.png"
 image burrito aside = "assets/portraits/burrito.png"
 image burrito awkward = "assets/portraits/burrito.png"
 image burrito frowning = "assets/portraits/burrito.png"
-
-# Placeholders
-image right placeholder_gator = "assets/portraits/placeholder_generic.png"
-image right placeholder_xatu = "assets/portraits/placeholder_generic.png"
-image generic_character = "assets/portraits/placeholder_generic.png"
 
 # Katie
 image katie = im.Scale("assets/portraits/katie.png", 300, 500)
@@ -139,11 +130,33 @@ image fontz = im.Scale("assets/portraits/gator.png", 300, 500)
 image gyra = "assets/portraits/gyra.jpg"
 
 #special text and images
-image letter_map = "assets/backgrounds/letter_map.png"  
-#image train_back = ""
-#image burrito_char_pan = ""
-#image letter = ""
-image dorm = im.Scale("assets/backgrounds/dorm.jpg", 800, 600)
+image letter_map = "assets/backgrounds/letter_map.png"
+
+# Old placeholders
+image gallery_button_test = "assets/buttons/gallerybuttontest.png"
+image gallery_test_1 = "assets/backgrounds/gallerytest1.png"
+image gallery_test_2 = "assets/backgrounds/gallerytest2.png"
+image gallery_test_3 = "assets/backgrounds/gallerytest3.png"
+image gallery_test_4 = "assets/backgrounds/galleryteset4.png"
+image start_placeholder = im.Scale("assets/backgrounds/start.png", 800, 600)
+image lunch_placeholder = "assets/backgrounds/placeholder_lunchroom.jpg"
+image dorm_placeholder = im.Scale("assets/backgrounds/dorm.jpg", 800, 600)
+image outside_placeholder = "assets/backgrounds/outside.jpg"
+image burrito_placeholder = "assets/gallery/burrito.png"
+image generic_character = "assets/gallery/placeholder_generic.png"
+image katie_placeholder = im.Scale("assets/gallery/katie.png", 300, 500)
+image atv_placeholder = im.Scale("assets/gallery/atv.png", 300, 500)
+image abby_placeholder = im.Scale("assets/gallery/abby.png", 300, 500)
+image digrat_placeholder = im.Scale("assets/gallery/digrat.png", 300, 500)
+image snake_placeholder = im.Scale("assets/gallery/snake.png", 300, 500)
+image arc_placeholder = im.Scale("assets/gallery/aj.png", 300, 500)
+image bj_placeholder = im.Scale("assets/gallery/bj.png", 300, 500)
+image air_placeholder = im.Scale("assets/gallery/air.png", 300, 500)
+image brian_placeholder = im.Scale("assets/gallery/brian.png", 300, 500)
+image flareon_placeholder = im.Scale("assets/gallery/flareon.png", 300, 500)
+image gator_placeholder = im.Scale("assets/gallery/gator.png", 300, 500)
+image fontz_placeholder = im.Scale("assets/gallery/gator.png", 300, 500)
+image gyra_placeholder = "assets/gallery/gyra.jpg"
 
 # Declare characters used by this game.
 define burrito = Character('Burrito', color="#c8ffc8")
