@@ -10,7 +10,7 @@ label dorm_scene_1:
   show burrito at left
   show burrito_voiceover at left
   burrito "a xatu?"
-  show right placeholder_xatu at right
+  show generic_character at right
   xa "..."
   burrito "Oh. You must be my roommate. Wait, that’s right! I heard about you in the acceptance letter. Hello there!"
   xa "..."
@@ -29,13 +29,13 @@ label dorm_scene_1:
   hide burrito
   burrito "I look at the clock. It dawns on me that this is the first day of the new school year." 
   show burrito at left
-  show right placeholder_xatu at right
+  show generic_character at right
   xa "..."
   burrito "No, I have class in half an hour."
   hide burrito
   burrito "Wait, did he just speak to me?"
   show burrito at left
-  show right placeholder_xatu at right
+  show generic_character at right
   xa "..."
   burrito "Are you like one of those ventriloquist guys? With the puppets?"
   xa "..."
@@ -71,10 +71,9 @@ label dorm_scene_1:
       $ late_on_first_day = False
       burrito "Better safe than sorry. I have the whole year to chat with Will, and being late on my first day won’t do me any good."
       show burrito at left
-      show right placeholder_xatu at right
+      show generic_character at right
       burrito "I’m sorry, I’d like to stay and chat a bit more, but I think I wanna be early for my first class. I still need to have breakfast, so I’ll be on my way now. Please excuse me, Will."
       hide burrito
-      $ relationships['atv'] += 2
       $ relationships['katie'] += 2
       $ relationships['bj'] += 2
   scene bg standard with dissolve #hallway

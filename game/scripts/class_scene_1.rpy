@@ -162,7 +162,6 @@ label class_scene_1:
   mw "That’s nice, Sparky."
   hide burrito
   burrito "Arc handed out the biology syllabi, muttering to himself all the while. We reviewed it line by line, as Ms. Whitney didn’t seem sure we knew how to read. Other than the frequent protests from students whenever Ms. Whitney gave someone a ridiculously cute nickname, it was peaceful and class proceeded smoothly."
-  $ relationships['atv'] += 1
   $ relationships['katie'] += 1
       
 return

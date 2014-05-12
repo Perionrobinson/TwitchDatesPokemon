@@ -28,7 +28,6 @@ label day_1_lunch:
 label day_1_lunch_table_1:
   $ relationships["bj"]+=3
   $ relationships["brian"]+=3
-  $ relationships["arc"]+=3
   $ relationships["air"]+=3
   "I think I’ll sit at Abba’s table. He helped me out with my enrollment form earlier, after all."
   show burrito nervous at left
@@ -244,7 +243,6 @@ label day_1_lunch_table_2:
       katie "I-I don’t like t-their eyes, okay?! They look creepy! Like you!"
       "The Dragonite cast me a glare before looking down to her plate, eating quickly. I don’t think she was very amused by my inquiry. ATV, though, seemed blissfuly happy."
       hide katie
-      $ relationships["atv"]+=3
       $ relationships["katie"]-=3
 
     "Don’t ask":
