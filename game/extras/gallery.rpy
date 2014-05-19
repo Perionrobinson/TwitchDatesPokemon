@@ -86,6 +86,7 @@ label gallery:
         #
         # Various art
         g.button("assets/buttons/variousart.png")
+        g.condition("persistent.beat_game") #Game not yet beaten, not unlocked button will show.
         g.display("assets/gallery/gallerytest1.png")
         g.display("assets/gallery/gallerytest2.png")
         g.display("assets/gallery/gallerytest3.png")

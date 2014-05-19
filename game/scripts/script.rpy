@@ -217,7 +217,7 @@ label start:
 
     stop music
     $ day = Day()
-    
+
     call introduction
 
     while day.dayNum <= 30:
@@ -254,6 +254,7 @@ label start:
         
     
     "The game has ended. Time has run out."
+    $ persistent.beat_game = True
     
     return
 
