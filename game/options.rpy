@@ -175,7 +175,7 @@ init -1 python hide:
 
     ## Set this to True if the game has voicing.
 
-    config.has_voice = False
+    config.has_voice = True
 
     ## Sounds that are used when button and imagemaps are clicked.
 
@@ -284,7 +284,7 @@ init -1 python hide:
 
     ## The default text speed in characters per second. 0 is infinite.
 
-    config.default_text_cps = 5
+    config.default_text_cps = 8
 
     ## The default auto-forward time setting.
 

@@ -26,7 +26,7 @@ label introduction:
     hide burrito
 
     show burrito_voiceover at left
-
+    
     "...oh yeah, I’m… I’m in the train."
     "Guess I fell asleep on the way here. Funny how moving can really tire you out."
     "The announcer's voice reminds me of my destination."

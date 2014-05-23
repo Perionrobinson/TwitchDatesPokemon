@@ -33,7 +33,9 @@ label day_1_lunch_table_1:
   show burrito nervous at left
   burrito "H-hey, Abba, mind if I sit here?"
   show bj at right
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 3 of 9.mp3"
   bj "Hm? Oh, the new student!"
+  voice sustain
   bj "I suppose we can make room for you on your first day."
   if (late_on_first_day):
     show bj annoyed
@@ -42,16 +44,20 @@ label day_1_lunch_table_1:
     burrito "R-right, I’ll do my best to be on time."
   show bj normal
   show burrito normal
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 4 of 9.mp3"
   bj "The office is still dealing with your enrollment form. They probably won’t be done until the end of the day."
+  voice sustain
   bj "For now, we’ll just call you by your official name."
   show burrito surprised
   burrito "Ehh? But..."
   show bj at center
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 5 of 9.mp3"
   bj "Anyway, let me introduce you. Everyone, this is Burrito, a new student at Twitch Academy."
   show burrito normal
   burrito "Hello everyone, nice to meet you."
 
   show arc normal at right
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 6 of 9.mp3"
   bj "Arc is a close friend of mine, and vice-president of the student council. I assume you met him earlier in Ms. Whitney’s class."
   arc "Hey, I meant to ask you earlier-- Why did you want to come to Twitch Academy?"
   show burrito nervous
@@ -70,6 +76,7 @@ label day_1_lunch_table_1:
   hide arc
 
   show air normal at right
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 7 of 9.mp3"
   bj "And this is Air, one of the best Ultraball players here."
   air "Thanks, bro. Just doin’ my thing."
 
@@ -83,6 +90,7 @@ label day_1_lunch_table_1:
   hide air
 
   show brian normal at right
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 8 of 9.mp3"
   bj "And last, but certainly not least, is my younger brother, Brian."
   # Brian character panel appears, when it exists
   "CHARACTER PANEL PLACEHOLDER"
@@ -151,6 +159,7 @@ label day_1_lunch_table_1:
   hide brian
   show burrito normal at left
   show bj normal at right
+  voice "assets/voices/abba/day_1_lunch/ABBA Part 9 of 9.mp3"
   bj "Well, you proved to be a pleasant lunchtime companion, Burrito. With that, I hope you will join us again sometime."
   burrito "Thanks, Abba."
   hide bj
@@ -568,10 +577,12 @@ label day_1_lunch_table_5:
     "..."
     "Even if I can’t sit with other students right now, I really shouldn't be upset."
     "After all, how can I be anything but happy with delicious burritos for lunch?"
+    voice "assets/voices/brian/day_1_lunch/Brian Part 02 of 21.mp3"
     "???" "E-excuse me?"
     show burrito confused at left
     burrito "Hmm?"
     show brian at right
+    voice "assets/voices/brian/day_1_lunch/Brian Part 03 of 21.mp3"
     brian "Um, hello there. My name is Brian. Would you mind if I....sit with you?"
     
     menu:
@@ -580,6 +591,7 @@ label day_1_lunch_table_5:
             show burrito happy at left
             burrito "Of course! I mean, if you really want to."
             show brian happy at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 04 of 21.mp3"
             brian "Sure!"
             
             # Brian character panel appears, when it exists
@@ -588,6 +600,7 @@ label day_1_lunch_table_5:
             
             "Brian sits across from me and I notice his lunch; it’s a salad with lots of sunflower seeds, and some sort of vegetable sandwich."
             show brian at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 05 of 21.mp3"
             brian "So, um... I heard that you've seen my brother already..."
             show burrito surprised at left
             burrito "Your brother? Wait, do you mean..."
@@ -598,23 +611,29 @@ label day_1_lunch_table_5:
             hide bj with fade
             show burrito surprised at left
             show brian at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 06 of 21.mp3"
             brian "Yes. I'm Abba’s little brother."
             show burrito smile at left
             burrito "Oh, I've met Abba! He seems like a really nice guy!"
             show brian awkward at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 07 of 21.mp3"
             brian "Y-yeah, he is."
             show burrito confused at left
             burrito "Huh?"
             show brian at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 08 of 21.mp3"
             brian "Oh, it's nothing."
             show brian happy at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 09 of 21.mp3"
             brian "Say, could I try some of that salsa?"
             show burrito at left
             burrito "Sure. But I have to warn you, it can be a little...spicy."
             "I watched as Brian scooped some salsa into a spoon and swallow it. A few seconds passed. I saw Brian start to sweat."
             show brian nervous at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 10 of 21.mp3"
             brian "W-well....that salsa really is....something!"
             show brian sweating at right
+            voice sustain
             brian "It's so...so...."
             show burrito nervous at left
             burrito "..."
@@ -622,11 +641,13 @@ label day_1_lunch_table_5:
             "He immediately went for his bottle of water and drank it all up!"
             "Maybe I should have been a bit more stern with the warning..."
             show brian panting at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 11 of 21.mp3"
             brian "That...is....spicy...."
             show burrito embarrassed at left
             burrito "Well, that’s because it was made with lots of Tamato and Kelpsy berries grown to be super spicy."
             show burrito at left
             burrito "Also, water isn’t the best choice when it comes to combating spiciness."
+            voice "assets/voices/brian/day_1_lunch/Brian Part 12 of 21.mp3"
             brian "Then, what’s the best way to *cough* fight it?"
             burrito "Milk and other dairy products. In fact, I happen to have a bottle of Moomoo Milk to sha--"
             hide brian
@@ -636,25 +657,32 @@ label day_1_lunch_table_5:
             show burrito surprised at left
             "?!"
             hide brian with moveoutright
+            voice "assets/voices/brian/day_1_lunch/Brian Part 13 of 21.mp3"
             brian "*gulp gulp*"
             "He just drank that one all up too!"
             show burrito laughing at left
             "I'm trying hard not to laugh, but... hahaha..."
             show brian nervous at right with moveinright
+            voice "assets/voices/brian/day_1_lunch/Brian Part 14 of 21.mp3"
             brian "Haah..."
             show brian at right
+            voice sustain
             brian "Aah."
             show brian smile at right
+            voice sustain
             brian "Wow, that really did the trick!"
             show burrito smile at left
             burrito "I know, right?"
             show brian at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 15 of 21.mp3"
             brian "And you know what? This salsa's actually pretty good!"
             show brian happy at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 16 of 21.mp3"
             brian "Think you can give me a recipe for this?"
             show burrito surprised at left
             burrito "Huh? But when you ate it…"
             show brian nervous at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 17 of 21.mp3"
             brian "I-I mean, maybe a milder version of it….if it’s not too much trouble."
             show burrito happy at left
             burrito "Oh! Sure thing!"
@@ -665,10 +693,12 @@ label day_1_lunch_table_5:
             "Still, it feels really nice to have a friend, especially on the first day."
             "~bell rings~"
             show brian at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 18 of 21.mp3"
             brian "Oh, looks like lunch is over. Thanks for letting me sit here, Burrito!"
             show burrito smile at left
             burrito "No problem! It was great talking with you. I hope we can have another lunch like this."
             show brian smile at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 19 of 21.mp3"
             brian "Me too! Bye!"
             burrito "Bye!"
             hide burrito
@@ -680,6 +710,7 @@ label day_1_lunch_table_5:
         "Decline his offer":
             burrito "I... I’m sorry, but I’d like to be alone today."
             show brian sad at right
+            voice "assets/voices/brian/day_1_lunch/Brian Part 21 of 21.mp3"
             brian "Oh... I understand. Well, have a good lunch."
             hide brian
             "I watch Brian leave with a look of guilt.I really didn’t mean to be rude to him. I hope that the next time we meet, we can have lunch together."
