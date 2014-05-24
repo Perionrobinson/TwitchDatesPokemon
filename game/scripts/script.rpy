@@ -159,25 +159,24 @@ image fontz_placeholder = im.Scale("assets/gallery/gator.png", 300, 500)
 image gyra_placeholder = "assets/gallery/gyra.jpg"
 
 # Declare characters used by this game.
-define burrito = Character('Burrito', color="#c8ffc8")
-define katie = Character('Katie', color="#00afc8")
-define atv = Character('ATV', color="#550000")
-define digrat = Character('Digrat', color="#AA66AA")
-define gyra = Character('Gyra', color="4455CC")
-define bj = Character('BJ', color="777777")
-define arc = Character('AJ', color="777777")
-define uk = Character('???',color="#FFFFFF")
-define xa = Character('Will',color="#84EFE5")
-define mw = Character('Ms. Whitney', color= "#FFAA99")
-define air = Character('Air', color="0000AA")
-define brian = Character('Brian', color="777777")
-define fonz = Character('Fonz', color="777777")
-define abby = Character('Abby', color="AA0000")
-define gator = Character('Gator', color="777777")
-define snake = Character('Solid Snake', color="777777")
-define flareon = Character('Flareon', color="AA0000")
+define burrito = Character('Burrito', color="#c8ffc8", voice_tag="burrito_voice")
+define katie = Character('Katie', color="#00afc8", voice_tag="katie_voice")
+define atv = Character('ATV', color="#550000", voice_tag="atv_voice")
+define digrat = Character('Digrat', color="#AA66AA", voice_tag="digrat_voice")
+define gyra = Character('Gyra', color="4455CC", voice_tag="gyra_voice")
+define bj = Character('BJ', color="777777", voice_tag="bj_voice")
+define arc = Character('AJ', color="777777", voice_tag="arc_voice")
+define xa = Character('Will',color="#84EFE5", voice_tag="xa_voice") #Does he even need a voice?
+define mw = Character('Ms. Whitney', color= "#FFAA99", voice_tag="mw_voice")
+define air = Character('Air', color="0000AA", voice_tag="air_voice")
+define brian = Character('Brian', color="777777", voice_tag="brian_voice")
+define fonz = Character('Fonz', color="777777", voice_tag="fonz_voice")
+define abby = Character('Abby', color="AA0000", voice_tag="abby_voice")
+define gator = Character('Gator', color="777777", voice_tag="gator_voice")
+define snake = Character('Solid Snake', color="777777", voice_tag="snake_voice")
+define flareon = Character('Flareon', color="AA0000", voice_tag="flareon_voice")
+define uk = Character('???',color="#FFFFFF", voice_tag="uk_voice") #Unknown
 
-#relationship_tracking
 label splashscreen:
     show bg standard
     
