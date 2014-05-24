@@ -390,7 +390,15 @@ screen preferences:
                 has vbox
                 
                 label _("Main Voices")
-                textbutton "Toggle Burrito" action [ToggleVoiceMute("burrito_voice"), ToggleVoiceMute("uk_main_burrito")]
+                imagemap:
+                    ground "assets/buttons/voice control/test/ground.png"
+                    idle "assets/buttons/voice control/test/idle.png"
+                    hover "assets/buttons/voice control/test/hover.png"
+                    selected_idle "assets/buttons/voice control/test/selectedidle.png"
+                    selected_hover "assets/buttons/voice control/test/selectedhover.png"
+                    hotspot (14,7,118,22) action [ToggleVoiceMute("burrito_voice"), ToggleVoiceMute("uk_main_burrito")]
+                
+                #textbutton "Toggle Burrito" action [ToggleVoiceMute("burrito_voice"), ToggleVoiceMute("uk_main_burrito")]
                 textbutton "Toggle Katie" action [ToggleVoiceMute("katie_voice"), ToggleVoiceMute("uk_main_katie")]
                 textbutton "Toggle Bird Jesus" action [ToggleVoiceMute("bj_voice"), ToggleVoiceMute("uk_main_bj")]
                 textbutton "Toggle Air" action [ToggleVoiceMute("air_voice"), ToggleVoiceMute("uk_main_air")]

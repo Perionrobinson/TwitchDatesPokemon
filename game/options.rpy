@@ -297,6 +297,18 @@ init -1 python hide:
     #TODO: Need a regular and hoverover background
     style.menu_choice_button.background = Frame("assets/menu/selector.png",0,0)
     style.menu_choice_button.hover_background = Frame("assets/menu/selector.png",0,0)
+    # More button stuff
+    def button(text, selected, returns, **properties):
+        style = 'button'
+        style_text = 'button_text'
+
+        if selected:
+            style='selected_button'
+            style_text='selected_button_text'
+
+        ui.button(clicked=ui.returns(returns),
+                  style=style, **properties)
+        ui.text(text, style=style_text)
 
 
 ## This section contains information about how to build your project into
