@@ -561,8 +561,10 @@ label day_1_lunch_table_4:
 label day_1_lunch_table_5:
     "There's a lone table sitting at the corner. I don't know if I should sit with others yet. I really don't know any of them, so I feel like I'd be a bit of a bother..."
     show burrito at left
+    voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 02 of 16.mp3"
     burrito "But eventually, it would be nice to join in and make some friends. So, until then..."
     show burrito sad at left
+    voice sustain
     burrito "I'll just sit by myself."
     hide burrito
     #play sound "sit_down.mp3"
@@ -573,6 +575,7 @@ label day_1_lunch_table_5:
     "I could already hear my stomach growling in excitement."
     "Ooh salsa... yeah that's it..."
     "These just look even more delicious with the salsa on it."
+    voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 03 of 16.mp3"
     burrito "Oh my lovely burritos, keep me company for today..."
     "..."
     "Even if I can’t sit with other students right now, I really shouldn't be upset."
@@ -580,6 +583,7 @@ label day_1_lunch_table_5:
     voice "assets/voices/brian/day_1_lunch/Brian Part 02 of 21.mp3"
     "???" "E-excuse me?"
     show burrito confused at left
+    voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 04 of 16.mp3"
     burrito "Hmm?"
     show brian at right
     voice "assets/voices/brian/day_1_lunch/Brian Part 03 of 21.mp3"
@@ -589,6 +593,7 @@ label day_1_lunch_table_5:
         "Let him sit":
             $ relationships["brian"]+=3
             show burrito happy at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 05 of 16.mp3"
             burrito "Of course! I mean, if you really want to."
             show brian happy at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 04 of 21.mp3"
@@ -603,6 +608,7 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 05 of 21.mp3"
             brian "So, um... I heard that you've seen my brother already..."
             show burrito surprised at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 06 of 16.mp3"
             burrito "Your brother? Wait, do you mean..."
             hide burrito
             hide brian
@@ -614,11 +620,13 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 06 of 21.mp3"
             brian "Yes. I'm Abba’s little brother."
             show burrito smile at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 07 of 16.mp3"
             burrito "Oh, I've met Abba! He seems like a really nice guy!"
             show brian awkward at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 07 of 21.mp3"
             brian "Y-yeah, he is."
             show burrito confused at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 08 of 16.mp3"
             burrito "Huh?"
             show brian at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 08 of 21.mp3"
@@ -627,6 +635,7 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 09 of 21.mp3"
             brian "Say, could I try some of that salsa?"
             show burrito at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 10 of 16.mp3"
             burrito "Sure. But I have to warn you, it can be a little...spicy."
             "I watched as Brian scooped some salsa into a spoon and swallow it. A few seconds passed. I saw Brian start to sweat."
             show brian nervous at right
@@ -644,11 +653,14 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 11 of 21.mp3"
             brian "That...is....spicy...."
             show burrito embarrassed at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 11 of 16.mp3"
             burrito "Well, that’s because it was made with lots of Tamato and Kelpsy berries grown to be super spicy."
             show burrito at left
+            voice sustain
             burrito "Also, water isn’t the best choice when it comes to combating spiciness."
             voice "assets/voices/brian/day_1_lunch/Brian Part 12 of 21.mp3"
             brian "Then, what’s the best way to *cough* fight it?"
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 12 of 16.mp3"
             burrito "Milk and other dairy products. In fact, I happen to have a bottle of Moomoo Milk to sha--"
             hide brian
             show brian at left with moveinright
@@ -672,6 +684,7 @@ label day_1_lunch_table_5:
             voice sustain
             brian "Wow, that really did the trick!"
             show burrito smile at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 13 of 16.mp3"
             burrito "I know, right?"
             show brian at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 15 of 21.mp3"
@@ -680,11 +693,13 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 16 of 21.mp3"
             brian "Think you can give me a recipe for this?"
             show burrito surprised at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 14 of 16.mp3"
             burrito "Huh? But when you ate it…"
             show brian nervous at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 17 of 21.mp3"
             brian "I-I mean, maybe a milder version of it….if it’s not too much trouble."
             show burrito happy at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 15 of 16.mp3"
             burrito "Oh! Sure thing!"
             "I may not be the salsa expert in the family, but I've helped with the cooking long enough for me to know how it's done. Maybe I can finally try my hand at making my own now!"
             "~munching sounds~"
@@ -696,6 +711,7 @@ label day_1_lunch_table_5:
             voice "assets/voices/brian/day_1_lunch/Brian Part 18 of 21.mp3"
             brian "Oh, looks like lunch is over. Thanks for letting me sit here, Burrito!"
             show burrito smile at left
+            voice "assets/voices/burrito/day_1_lunch/alone/Burritoful-- Part 16 of 16.mp3"
             burrito "No problem! It was great talking with you. I hope we can have another lunch like this."
             show brian smile at right
             voice "assets/voices/brian/day_1_lunch/Brian Part 19 of 21.mp3"

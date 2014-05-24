@@ -175,7 +175,8 @@ define abby = Character('Abby', color="AA0000", voice_tag="abby_voice")
 define gator = Character('Gator', color="777777", voice_tag="gator_voice")
 define snake = Character('Solid Snake', color="777777", voice_tag="snake_voice")
 define flareon = Character('Flareon', color="AA0000", voice_tag="flareon_voice")
-define uk = Character('???',color="#FFFFFF", voice_tag="uk_voice") #Unknown
+define uk_main = Character('???',color="#FFFFFF", voice_tag="uk_main_voice") #Unknown for main characters
+define uk_minor = Character('???',color="#FFFFFF", voice_tag="uk_minor_voice") #Unknown for minor characters
 
 label splashscreen:
     show bg standard

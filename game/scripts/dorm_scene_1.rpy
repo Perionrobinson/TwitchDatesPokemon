@@ -1,6 +1,6 @@
 label dorm_scene_1: 
  
-  uk "KWEEAH!"
+  uk_minor "KWEEAH!"
   show burrito_voiceover at left
   show burrito at left
   burrito "W...what was that?!"

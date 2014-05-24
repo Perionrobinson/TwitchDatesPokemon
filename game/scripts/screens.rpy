@@ -390,14 +390,15 @@ screen preferences:
                 has vbox
                 
                 label _("Main Voices")
-                textbutton "Mute Burrito" action ToggleVoiceMute("burrito_voice")
-                textbutton "Mute Katie" action ToggleVoiceMute("katie_voice")
-                textbutton "Mute Bird Jesus" action ToggleVoiceMute("bj_voice")
-                textbutton "Mute Air" action ToggleVoiceMute("air_voice")
-                textbutton "Mute Abby" action ToggleVoiceMute("abby_voice")
-                textbutton "Mute Gator" action ToggleVoiceMute("gator_voice")
-                textbutton "Mute Flareon" action ToggleVoiceMute("flareon_voice")
-                textbutton "Mute Brian" action ToggleVoiceMute ("brian_voice")
+                textbutton "Toggle Burrito" action ToggleVoiceMute("burrito_voice")
+                textbutton "Toggle Katie" action ToggleVoiceMute("katie_voice")
+                textbutton "Toggle Bird Jesus" action ToggleVoiceMute("bj_voice")
+                textbutton "Toggle Air" action ToggleVoiceMute("air_voice")
+                textbutton "Toggle Abby" action ToggleVoiceMute("abby_voice")
+                textbutton "Toggle Gator" action ToggleVoiceMute("gator_voice")
+                textbutton "Toggle Flareon" action ToggleVoiceMute("flareon_voice")
+                textbutton "Toggle Brian" action ToggleVoiceMute ("brian_voice")
+                textbutton "Toggle Unknown (Main)" action ToggleVoiceMute ("uk_main_voice")
 
         vbox:
             frame:
@@ -437,14 +438,10 @@ screen preferences:
                 has vbox
                 
                 label _("Other Voices")
-                textbutton "Mute ATV" action ToggleVoiceMute("atv_voice")
-                textbutton "Mute Gyra" action ToggleVoiceMute("gyra_voice")
-                textbutton "Mute Arc" action ToggleVoiceMute("arc_voice")
-                textbutton "Mute Xatu" action ToggleVoiceMute("xa_voice")
-                textbutton "Mute Whitney" action ToggleVoiceMute("mw_voice")
-                textbutton "Mute Fonz" action ToggleVoiceMute("fonz_voice")
-                textbutton "Mute Snake" action ToggleVoiceMute("snake_voice")
-                textbutton "Mute ???" action ToggleVoiceMute("uk_voice")
+                textbutton "Mute All Main Characters" action [SetVoiceMute("burrito_voice", True), SetVoiceMute("katie_voice", True), SetVoiceMute("bj_voice", True), SetVoiceMute("air_voice", True), SetVoiceMute("abby_voice", True), SetVoiceMute("gator_voice", True), SetVoiceMute("flareon_voice", True), SetVoiceMute("brian_voice", True), SetVoiceMute("uk_main_voice", True)]
+                textbutton "Unmute All Main Characters" action [SetVoiceMute("burrito_voice", False), SetVoiceMute("katie_voice", False), SetVoiceMute("bj_voice", False), SetVoiceMute("air_voice", False), SetVoiceMute("abby_voice", False), SetVoiceMute("gator_voice", False), SetVoiceMute("flareon_voice", False), SetVoiceMute("brian_voice", False), SetVoiceMute("uk_main_voice", False)]
+                textbutton "Toggle All Minor Characters" action [ToggleVoiceMute("atv_voice"), ToggleVoiceMute("gyra_voice"), ToggleVoiceMute("arc_voice"), ToggleVoiceMute("xa_voice"), ToggleVoiceMute("mw_voice"), ToggleVoiceMute("fonz_voice"), ToggleVoiceMute("snake_voice"), ToggleVoiceMute ("uk_minor_voice")]
+                textbutton "Toggle All Spoiler Characters" action []
 
         vbox:
             frame:
