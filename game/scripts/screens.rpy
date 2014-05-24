@@ -390,15 +390,14 @@ screen preferences:
                 has vbox
                 
                 label _("Main Voices")
-                textbutton "Toggle Burrito" action ToggleVoiceMute("burrito_voice")
-                textbutton "Toggle Katie" action ToggleVoiceMute("katie_voice")
-                textbutton "Toggle Bird Jesus" action ToggleVoiceMute("bj_voice")
-                textbutton "Toggle Air" action ToggleVoiceMute("air_voice")
-                textbutton "Toggle Abby" action ToggleVoiceMute("abby_voice")
-                textbutton "Toggle Gator" action ToggleVoiceMute("gator_voice")
-                textbutton "Toggle Flareon" action ToggleVoiceMute("flareon_voice")
-                textbutton "Toggle Brian" action ToggleVoiceMute ("brian_voice")
-                textbutton "Toggle Unknown (Main)" action ToggleVoiceMute ("uk_main_voice")
+                textbutton "Toggle Burrito" action [ToggleVoiceMute("burrito_voice"), ToggleVoiceMute("uk_main_burrito")]
+                textbutton "Toggle Katie" action [ToggleVoiceMute("katie_voice"), ToggleVoiceMute("uk_main_katie")]
+                textbutton "Toggle Bird Jesus" action [ToggleVoiceMute("bj_voice"), ToggleVoiceMute("uk_main_bj")]
+                textbutton "Toggle Air" action [ToggleVoiceMute("air_voice"), ToggleVoiceMute("uk_main_air")]
+                textbutton "Toggle Abby" action [ToggleVoiceMute("abby_voice"), ToggleVoiceMute("uk_main_abby")]
+                textbutton "Toggle Gator" action [ToggleVoiceMute("gator_voice"), ToggleVoiceMute("uk_main_gator")]
+                textbutton "Toggle Flareon" action [ToggleVoiceMute("flareon_voice"), ToggleVoiceMute("uk_main_flareon")]
+                textbutton "Toggle Brian" action [ToggleVoiceMute("brian_voice"), ToggleVoiceMute("uk_main_brian")]
 
         vbox:
             frame:
@@ -438,10 +437,19 @@ screen preferences:
                 has vbox
                 
                 label _("Other Voices")
-                textbutton "Mute All Main Characters" action [SetVoiceMute("burrito_voice", True), SetVoiceMute("katie_voice", True), SetVoiceMute("bj_voice", True), SetVoiceMute("air_voice", True), SetVoiceMute("abby_voice", True), SetVoiceMute("gator_voice", True), SetVoiceMute("flareon_voice", True), SetVoiceMute("brian_voice", True), SetVoiceMute("uk_main_voice", True)]
-                textbutton "Unmute All Main Characters" action [SetVoiceMute("burrito_voice", False), SetVoiceMute("katie_voice", False), SetVoiceMute("bj_voice", False), SetVoiceMute("air_voice", False), SetVoiceMute("abby_voice", False), SetVoiceMute("gator_voice", False), SetVoiceMute("flareon_voice", False), SetVoiceMute("brian_voice", False), SetVoiceMute("uk_main_voice", False)]
-                textbutton "Toggle All Minor Characters" action [ToggleVoiceMute("atv_voice"), ToggleVoiceMute("gyra_voice"), ToggleVoiceMute("arc_voice"), ToggleVoiceMute("xa_voice"), ToggleVoiceMute("mw_voice"), ToggleVoiceMute("fonz_voice"), ToggleVoiceMute("snake_voice"), ToggleVoiceMute ("uk_minor_voice")]
-                textbutton "Toggle All Spoiler Characters" action []
+                textbutton "Mute All Main Characters" action [SetVoiceMute("burrito_voice", True), SetVoiceMute("katie_voice", True),
+                    SetVoiceMute("bj_voice", True), SetVoiceMute("air_voice", True), SetVoiceMute("abby_voice", True), SetVoiceMute("gator_voice", True),
+                    SetVoiceMute("flareon_voice", True), SetVoiceMute("brian_voice", True), SetVoiceMute("uk_main_voice", True), SetVoiceMute("uk_main_burrito", True),
+                    SetVoiceMute("uk_main_katie", True), SetVoiceMute("uk_main_bj", True), SetVoiceMute("uk_main_air", True), SetVoiceMute("uk_main_abby", True),
+                    SetVoiceMute("uk_main_gator", True), SetVoiceMute("uk_main_flareon", True), SetVoiceMute("uk_main_brian", True)]
+                textbutton "Unmute All Main Characters" action [SetVoiceMute("burrito_voice", False), SetVoiceMute("katie_voice", False),
+                    SetVoiceMute("bj_voice", False), SetVoiceMute("air_voice", False), SetVoiceMute("abby_voice", False), SetVoiceMute("gator_voice", False),
+                    SetVoiceMute("flareon_voice", False), SetVoiceMute("brian_voice", False), SetVoiceMute("uk_main_voice", False), SetVoiceMute("uk_main_burrito", False),
+                    SetVoiceMute("uk_main_katie", False), SetVoiceMute("uk_main_bj", False), SetVoiceMute("uk_main_air", False), SetVoiceMute("uk_main_abby", False),
+                    SetVoiceMute("uk_main_gator", False), SetVoiceMute("uk_main_flareon", False), SetVoiceMute("uk_main_brian", False)]
+                textbutton "Toggle All Minor Characters" action [ToggleVoiceMute("atv_voice"), ToggleVoiceMute("gyra_voice"), ToggleVoiceMute("arc_voice"), ToggleVoiceMute("xa_voice"),
+                    ToggleVoiceMute("mw_voice"), ToggleVoiceMute("fonz_voice"), ToggleVoiceMute("snake_voice"), ToggleVoiceMute ("uk_minor_voice")]
+                textbutton "Toggle All Spoiler Characters" action [] # No spoiler characters yet
 
         vbox:
             frame:

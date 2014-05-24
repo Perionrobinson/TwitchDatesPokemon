@@ -4,30 +4,30 @@ label class_scene_1:
   show burrito at left
   burrito "I’d better get to class. I just- oof!"
   voice "assets/voices/gator/day_1_hallway/Lazor Part 2 of 8.mp3"
-  uk_main "Hey, Junior. Just where do you think you're going in such a hurry? It looks to me like you’re running in the hallway."
+  uk_gator "Hey, Junior. Just where do you think you're going in such a hurry? It looks to me like you’re running in the hallway."
   burrito "W...what? Who said that?"
   voice "assets/voices/gator/day_1_hallway/Lazor Part 3 of 8.mp3"
-  uk_main "Up here, new kid."
+  uk_gator "Up here, new kid."
   show gator at right
   voice "assets/voices/gator/day_1_hallway/Lazor Part 4 of 8.mp3"
   gator "The name's Lazor. Lazor Gator. Has no one ever told you that running in the halls is an offense worthy of expulsion?"
   burrito "S... Sorry, Lazor Gator…"
   voice "assets/voices/gator/day_1_hallway/Lazor Part 5 of 8.mp3"
   gator "Sorry? Why’re you apologizing to me? You’re the one who’s going to get kicked out. And on your first day, too. Tch..."
-  uk_main "Gator, do you have to do this to every new student on their first day?"
+  uk_bj "Gator, do you have to do this to every new student on their first day?"
   voice "assets/voices/gator/day_1_hallway/Lazor Part 6 of 8.mp3"
   gator "Hey! I was just getting started with this poor fella!"
   voice "assets/voices/gator/day_1_hallway/Lazor Part 7 of 8.mp3"
   gator "Well, since that joke’s been ruined..."
   voice "assets/voices/gator/day_1_hallway/Lazor Part 8 of 8.mp3"
   gator "It's nice to meet you!"
-  uk_main "Don't you have a class to get to, Gator?"
+  uk_bj "Don't you have a class to get to, Gator?"
   gator "I dunno, do I?"
-  uk_main "Mmm. Well, if your intent is to play this little game of yours, so be it. I've important matters to attend to, like directing this little Espeon here to class."
+  uk_bj "Mmm. Well, if your intent is to play this little game of yours, so be it. I've important matters to attend to, like directing this little Espeon here to class."
   gator "Ugh. Boring. I’m off."
   hide gator
   $ relationships['gator'] += 1
-  uk_main "Now then..."
+  uk_bj "Now then..."
   show bj at right
   bj "Hello, sophomore. My name is Abba. I am the head of the student council, third year class rep, and your guide to your first class."
   if(late_on_first_day):

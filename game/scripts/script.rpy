@@ -159,24 +159,37 @@ image fontz_placeholder = im.Scale("assets/gallery/gator.png", 300, 500)
 image gyra_placeholder = "assets/gallery/gyra.jpg"
 
 # Declare characters used by this game.
+
+# Major Characters
 define burrito = Character('Burrito', color="#c8ffc8", voice_tag="burrito_voice")
 define katie = Character('Katie', color="#00afc8", voice_tag="katie_voice")
+define bj = Character('BJ', color="777777", voice_tag="bj_voice")
+define air = Character('Air', color="0000AA", voice_tag="air_voice")
+define brian = Character('Brian', color="777777", voice_tag="brian_voice")
+define abby = Character('Abby', color="AA0000", voice_tag="abby_voice")
+define gator = Character('Gator', color="777777", voice_tag="gator_voice")
+define flareon = Character('Flareon', color="AA0000", voice_tag="flareon_voice")
+
+# Minor Characters
 define atv = Character('ATV', color="#550000", voice_tag="atv_voice")
 define digrat = Character('Digrat', color="#AA66AA", voice_tag="digrat_voice")
 define gyra = Character('Gyra', color="4455CC", voice_tag="gyra_voice")
-define bj = Character('BJ', color="777777", voice_tag="bj_voice")
 define arc = Character('AJ', color="777777", voice_tag="arc_voice")
 define xa = Character('Will',color="#84EFE5", voice_tag="xa_voice") #Does he even need a voice?
 define mw = Character('Ms. Whitney', color= "#FFAA99", voice_tag="mw_voice")
-define air = Character('Air', color="0000AA", voice_tag="air_voice")
-define brian = Character('Brian', color="777777", voice_tag="brian_voice")
 define fonz = Character('Fonz', color="777777", voice_tag="fonz_voice")
-define abby = Character('Abby', color="AA0000", voice_tag="abby_voice")
-define gator = Character('Gator', color="777777", voice_tag="gator_voice")
 define snake = Character('Solid Snake', color="777777", voice_tag="snake_voice")
-define flareon = Character('Flareon', color="AA0000", voice_tag="flareon_voice")
-define uk_main = Character('???',color="#FFFFFF", voice_tag="uk_main_voice") #Unknown for main characters
-define uk_minor = Character('???',color="#FFFFFF", voice_tag="uk_minor_voice") #Unknown for minor characters
+
+# When a character is unknown. For voiceing purposes each of the main characters have a seperate control.
+define uk_gator = Character('???',color="#FFFFFF", voice_tag="uk_main_gator")
+define uk_katie = Character('???',color="#FFFFFF", voice_tag="uk_main_katie")
+define uk_burrito = Character('???',color="#FFFFFF", voice_tag="uk_main_burrito")
+define uk_bj = Character('???',color="#FFFFFF", voice_tag="uk_main_bj")
+define uk_air = Character('???',color="#FFFFFF", voice_tag="uk_main_air")
+define uk_brian = Character('???',color="#FFFFFF", voice_tag="uk_main_brian")
+define uk_abby = Character('???',color="#FFFFFF", voice_tag="uk_main_abby")
+define uk_flareon = Character('???',color="#FFFFFF", voice_tag="uk_main_flareon")
+define uk_minor = Character('???',color="#FFFFFF", voice_tag="uk_minor_voice")
 
 label splashscreen:
     show bg standard
